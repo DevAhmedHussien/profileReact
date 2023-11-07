@@ -71,3 +71,31 @@ border:0.5px solid #4db5ff;
     background-color: transparent !important;
     border:0.5px solid #4db5ff;
 }
+footer{
+    background-color: #313740;
+    margin-top: 35px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnn{
+    
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    color: #202124;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 1rem #0ef;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btnn:hover{
+    color:aliceblue;
+    scale: 1.04;
+}
+.pa{
+    font-size: 20px;
+}

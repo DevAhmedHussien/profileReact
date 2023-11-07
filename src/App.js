@@ -5,6 +5,8 @@ import Experience from './Experience';
 import LabelBottomNavigation from './fixedToggleBottom';
 import Services from './Services';
 import Projects from './Projects';
+import ContactMe from './ContactMe';
+import Footer from'./Footer'
 function App() {
   return (
     <div className="App">
@@ -14,6 +16,8 @@ function App() {
       <Experience/>
       <Services/>
       <Projects/>
+      <ContactMe/>
+      <Footer/>
       </div>
   );
 }
