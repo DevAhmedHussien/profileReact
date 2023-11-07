@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+:root{
+    --bg-color:#1f242d;
+    --text-color:white;
+    --main-color: #0ef;
+    --second-color:#31353b;
+    --color-bg: #;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    box-sizing: border-box; list-style: none;
+    text-decoration: none;
+}
+.App{
+    background-color: #253546 !important;
+    /* #253546 !important; */
+    /* #1f1d36; */
+    color:var(--text-color);
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imgAboutMe:hover{
+    transform: rotate(15deg);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bottomNavigation{
+    transition:  2s !important;
+    /* color:black; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bottomNavigation:hover{
+opacity: 1;
+border-radius:50%
 }
-
-.App-link {
-  color: #61dafb;
+.cartAboutMe{
+    transition:  1s !important;
+    opacity: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartAboutMe:hover{
+    background-color: transparent;
+}
+/*  */
+.App{
+    background-color: var(--bg-color) !important;
+    color:var( --text-color) !important;
+    /* letter-spacing: 1px; */
+}
+.cardEx{
+    transition:  2s !important;
+}
+.cardEx:hover{
+background-color: transparent;
+border:0.5px solid #4db5ff;
+}
+.cardServ{
+    transition: 1s !important;
+}
+.cardServ:hover{
+    width: 600px;
+    background-color: transparent;
+    }
+.buttonPro{
+    transition: 1s !important;  
+}
+.buttonPro:hover{
+    background-color: silver !important;
+    color:black;
+    scale:1.05;
+}
+.proCard{
+    transition: 2s !important;  
+    /* height: 500px; */
+}
+.proCard:hover{
+    background-color: transparent !important;
+    border:0.5px solid #4db5ff;
 }
