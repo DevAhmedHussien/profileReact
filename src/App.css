@@ -8,7 +8,29 @@
     --color-primary: #4db5ff;
     box-sizing: border-box; list-style: none;
     text-decoration: none;
+    padding:0;   
+    margin:0;
 }
+@font-face {
+    font-family: AhmedBold ;
+    src: url(../public/Font/KayPhoDu-Bold.ttf);
+    font-weight: 900;
+  }@font-face {
+    font-family: AhmedBold ;
+    src: url(../public/Font/KayPhoDu-SemiBold.ttf);
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: AhmedBold ;
+    src: url(../public/Font/KayPhoDu-Medium.ttf);
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: AhmedBold ;
+    src: url(../public/Font/KayPhoDu-Regular.ttf);
+    font-weight: 200;
+  }
+
 .App{
     background-color: #253546 !important;
     /* #253546 !important; */

@@ -69,7 +69,7 @@ export default function Header() {
         
           });
       }, []);
-      useEffect(() => {
+    useEffect(() => {
         if (scrollref.current )
           scrollReveal().reveal(scrollref.current  , {
             origin:'right',
@@ -79,8 +79,7 @@ export default function Header() {
         
           });
       }, []);
-
-      useEffect(() => {
+    useEffect(() => {
         if (ahmedRef.current )
           scrollReveal().reveal(ahmedRef.current  , {
             origin:'right',
@@ -90,7 +89,7 @@ export default function Header() {
         
           });
       }, []);
-      useEffect(() => {
+    useEffect(() => {
         if (juniorRef.current )
           scrollReveal().reveal(juniorRef.current  , {
             origin:'left',
@@ -154,7 +153,7 @@ export default function Header() {
             <Box> 
                 <div style={{
                     transform: "rotate(90deg)",
-                    fontSize: "15px",color:' #4db5ff',opacity:0.6,letterSpacing:1,fontWeight:300,cursor:'pointer'
+                    fontSize: "15px",color:' #4db5ff', letterSpacing:1,fontWeight:300,cursor:'pointer'
                 }}
                 onClick={scrollDown} ref={scrollref}>scroll down</div>
                 {/* <BasicSpeedDial sx={{}} /> */}

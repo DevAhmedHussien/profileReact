@@ -3,18 +3,22 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CardsInnerAboutMe from "./CardsInnerAboutMe"
-import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 import InterpreterModeRoundedIcon from '@mui/icons-material/InterpreterModeRounded';
 import AllInclusiveRoundedIcon from '@mui/icons-material/AllInclusiveRounded';
 import RequestPageRoundedIcon from '@mui/icons-material/RequestPageRounded';
 export default function AboutMe(){
     return(
-        <Box sx={{ height:"100vh" ,marginTop:"-174px"}} id='about'>
+        <Box sx={{ //height:"100vh" ,
+            marginTop:"-174px"}} id='about'>
+            <Box sx={{paddingTop:'20px'}}>
             <Typography variant='h2' 
-                sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> what skill i have </Typography>
+            sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',
+            margin:'20px 0 -20px',fontSize:15,}}> what skill i have </Typography>
             <Typography  variant="h3"  sx={{textAlign:'center',  padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
                 About me
             </Typography>
+            </Box>
+            
             <Box style={{display:"flex",justifyContent: "center",alignItems:'center',margin:'0px auto',gap:'160px'}}> 
                 <Box style={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'400px',height:'400px'}}>
                     <img className='imgAboutMe' src={photo}alt='' 
@@ -35,7 +39,7 @@ export default function AboutMe(){
                     </Box>
                 </Box>
                     <Box sx={{mt:3}}>
-                        <Typography variant='p' sx={{color:'silver' , mt:10}} >
+                        <Typography variant='h6' sx={{color:'silver' , mt:5,fontSize:17}} >
                             Специалист по недвижимости в компании «Этажи». <br/>
                             Специалист по недвижимости в компании «Этажи»<br/>
                             Специалист по недвижимости в компании «Этажи»v<br/>

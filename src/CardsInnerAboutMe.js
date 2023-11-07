@@ -1,6 +1,7 @@
 import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import { Typography } from '@mui/material';
 
 export default function CardsInnerAboutMe({icon , title , perif,sendM}){
     return(
@@ -9,8 +10,8 @@ export default function CardsInnerAboutMe({icon , title , perif,sendM}){
         ,background:'#253546', borderRadius:'20px'
             ,alignItems : 'center' ,cursor:'pointer'}}>
             <Box style={{fontSize: '66px'}}>{icon}</Box>
-            <h5 style={{ fontSize: "17px",margin:'0' ,color:'white'}} >{title}</h5>
-            <p style={{fontSize: "9px", color: 'silver'}}>{perif}</p>
+            <Typography  variant='h6'  style={{ fontSize: "17px",margin:'0' ,color:'white'}} >{title}</Typography>
+            <Typography variant='h6' style={{fontSize: "9px", color: 'silver'}}>{perif}</Typography>
             <a href='' style={{fontSize: "11px", color: '#4db5ff',textDecoration:'none'}}>{sendM}</a>
 
         </Card>

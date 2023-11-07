@@ -28,7 +28,7 @@ export default function ContactMe() {
       noValidate
       autoComplete="off"
     >
-        <Box sx={{display:'flex', flexDirection:'column',gap:5}}>
+        <Box sx={{display:'flex', flexDirection:'column',gap:2}}>
             <Box>
                 <CardsInnerAboutMe icon ={<MarkunreadIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} 
                 title='E-mail' perif='a.abdelmaksoud@mail.ru'
@@ -45,7 +45,7 @@ export default function ContactMe() {
                 <CardsInnerAboutMe icon ={<RequestPageRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}}  />} 
                 title='Projects' perif='+80 complited'
                 sendM='Send a message'
-                 />
+                />
             </Box>
         </Box>
 
