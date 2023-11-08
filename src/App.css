@@ -74,8 +74,9 @@ border:0.5px solid #4db5ff;
     transition: 1s !important;
 }
 .cardServ:hover{
-    width: 600px;
+    width: 400px;
     background-color: transparent;
+    border:0.5px solid #4db5ff;
     }
 .buttonPro{
     transition: 1s !important;  
@@ -121,16 +122,15 @@ border:0.5px solid #4db5ff;
 @media( max-width:606px ){
     .aboutmeBox{
             flex-direction: column;
-           
     }
     #DivimgAbout{
-        width: 300px !important;
-    height: 300px !important;
+        width: 270 !important;
+    height: 270 !important;
         /* background-color: green !important; */
     }
     #imgAboutMe{
-        width: 300px !important;
-        height: 300px !important;
+        width: 270 !important;
+        height: 270 !important;
             /* background-color: green !important; */
     }
     .DivimgAbout{
@@ -152,18 +152,27 @@ border:0.5px solid #4db5ff;
     .INP{
         width: 350px !important;
     }
-
+    .ConCardBox{
+        flex-direction: row !important;
+    }
+    /* #ofay{
+        margin-left:10px;
+    } */
+    .cartAboutMe{
+        width: 150px !important;
+        height: 150px !important;;
+    }
     }
 
     @media( max-width:404px ){
         #DivimgAbout{
-            width: 300px !important;
-        height: 300px !important;
+            width: 230px !important;
+        height: 230px !important;
             /* background-color: green !important; */
         }
         #imgAboutMe{
-            width: 300px !important;
-            height: 300px !important;
+            width: 230px !important;
+            height: 230px !important;
                 /* background-color: green !important; */
         }
         .DivimgAbout{

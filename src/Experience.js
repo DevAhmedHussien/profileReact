@@ -38,7 +38,7 @@ export default function Experience(){
         </Box>
         <Box className='exmeBox' sx={{  padding:5 ,display:'flex',justifyContent:'center' , flexWrap:'wrap',  alignItems:'center' , gap:10,}}>
             <Box>
-                <Card  id='exCardd' sx={{ width:600 ,borderRadius:5 , height:400,background:'#253546',}}  >
+                <Card  id='exCardd' className="cardEx" sx={{ width:600 ,borderRadius:5 , height:400,background:'#253546',}}  >
                 <CardActionArea  ref={front}  sx={{width:'100%'}}>
                     <Typography variant='h5' sx={{textAlign:'center',p:4,color:' #4db5ff'}}>Frontend Development
                     </Typography>
@@ -96,7 +96,7 @@ export default function Experience(){
                 </Card>
             </Box>
             <Box>
-            <Card  id='exCardd' sx={{ width: 600 ,borderRadius:5 , height:400, background:'#253546',}} className="cardEx">
+            <Card  id='exCardd' className="cardEx" sx={{ width: 600 ,borderRadius:5 , height:400, background:'#253546',}} >
                 <CardActionArea  ref={back}  sx={{width:'100%'}}>
                     <Typography variant='h5' sx={{textAlign:'center',p:4,color:' #4db5ff'}}>Backend Development
                     </Typography>

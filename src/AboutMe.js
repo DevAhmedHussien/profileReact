@@ -12,9 +12,8 @@ export default function AboutMe(){
     const card = useRef(null);
     const button = useRef(null)
     const text = useRef(null)
-
     useEffect(() => {
-        if (card.current )
+        if (card.current)
           scrollReveal().reveal(card.current  , {
             origin:'right',
             distance:'80px',
@@ -38,7 +37,7 @@ export default function AboutMe(){
             distance:'80px',
             duration:2000,
             delay:200
-          });
+        });
     }, []);
     return(
         <Box sx={{ //height:"100vh" ,
@@ -52,8 +51,10 @@ export default function AboutMe(){
             </Typography>
             </Box>
             
-            <Box className='aboutmeBox' style={{display:"flex", flexWrap:'wrap', justifyContent: "center",alignItems:'center',margin:'0px auto',gap:'160px'}}> 
-                <Box id='DivimgAbout' className='DivimgAbout' style={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'400px',height:'400px'}}>
+            <Box className='aboutmeBox' 
+            sx={{display:"flex", flexWrap:'wrap', justifyContent: "center"
+            ,alignItems:'center',margin:'0px auto',gap:10}}> 
+                <Box id='DivimgAbout' className='DivimgAbout' sx={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'400px',height:'400px'}}>
                     <img id='imgAboutMe' className='imgAboutMe' src={photo}alt='' 
                     style={{background:'#31353b',borderRadius:'30px',transition:'1s',width:'400px',height:'400px'}}/>
                 </Box>
@@ -82,9 +83,9 @@ export default function AboutMe(){
                         I know three languages are <span style={{color:'#4db5ff'}}> [ Arabic ,English ,Russian ] </span>
                         </Typography> 
                     </Box>
-                    <Button ref={button}  className='buttonPro'  
-                    sx={{fontSize:"11px" ,width: "23%",height: "44px", mt:5,padding:2,height: "44px",color: '#1f1f38', background:'#4db5ff'}}
-                    variant="contained">lets Talk</Button>
+                    <Button ref={button} id='ofay'  className='buttonPro'  
+                    sx={{ marginLeft:2, fontSize:"11px" ,width: "23%",height: "44px", mt:5,padding:2,color: '#1f1f38', background:'#4db5ff'}}
+                    variant="contained" href='#contact'>lets Talk</Button>
                 </Box>
             </Box>
         </Box>

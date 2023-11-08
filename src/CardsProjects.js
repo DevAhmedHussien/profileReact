@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import Box from '@mui/material/Box';
-import SourceIcon from '@mui/icons-material/Source';
+
 export default function CardsProjects({photo,title,git}) {
 return (
     <Card className='proCard' sx={{ maxWidth: 345 , background:'#253546',height:'470px'
@@ -19,7 +19,6 @@ return (
         />
         <CardContent>
         <Box sx={{display:'flex',justifyContent:'start',alignItems:'center',gap:1}}>
-            {/* <SourceIcon sx={{color:' #4db5ff' ,fontSize:'25px'}}/>  */}
             <Typography gutterBottom variant="h6" component="div" 
             sx={{marginTop:'-25px',marginBottom: '-5px',padding:1,color:'silver',fontSize:22}}>
                 {title}
