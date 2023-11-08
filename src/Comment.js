@@ -19,19 +19,19 @@ const images = [
 {
     label: 'Mickel jasmson',
     imgPath:x,
-    body:`Loreeememasdajsodaskldkalsdjkal;kdal;kd;akl;asl;kd;ald;lslslsdfmlsdfm`
+    body:`Loreeememasdajsodaskldkalsdjkal;kdal;kd;akl;m`
 },
 {
     label: 'Amer hussin',
     imgPath:
     y,
-    body:`Loreeememasdajsodaskldkalsdjkal;kdal;kd;akl;asl;kd;ald;lslslsdfmlsdf`
+    body:`Loreeememasdajsodaskldkalsdjkal;kdal;kd;akl;f`
 },
 {
     label: 'Radwa hussien',
     imgPath:
     z,
-    body:`Loreeememasdajsodaskldkalsdjkal;kdal;kd;akl;asl;kd;ald;lslslsdfmlsdfm`
+    body:`Loreeememassl;kd;ald;lslslsdfmlsdfm`
 },
 
 ];
@@ -59,7 +59,7 @@ return (
             </Typography>
         </Box>
         <Box   component="div"
-        sx={{ width: 700, flexGrow: 1 ,display:'flex' , flexDirection:'column',alignItems:'center'}}>
+        sx={{ width: '70%', flexGrow: 1 ,display:'flex' , flexDirection:'column',alignItems:'center'}}>
         {/* <Paper 
             square
             elevation={0}

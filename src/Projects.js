@@ -1,27 +1,39 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
 import photoProject1 from './images/Screenshot_2.png'
 import photoProject2 from './images/Screenshot_3.png'
 import photoProject3 from './images/thethird.png'
 import CardsProjects from './CardsProjects';
+import scrollReveal from "scrollreveal";
+import { useRef ,useEffect} from 'react';
 export default function Projects() {
+    const juniorRef = useRef(null)
+    useEffect(() => {
+        if (juniorRef.current )
+          scrollReveal().reveal(juniorRef.current  , {
+            origin:'bottom',
+            distance:'80px',
+            duration:2000,
+            delay:200
+          });
+    }, []);
 return (
     <Box sx={{}} id='projects'>
         <Box sx={{paddingTop:'30px'}}>
             <Typography variant='h2' 
-                    sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> what skill i have </Typography>
+                    sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> My Recent Work </Typography>
             <Typography  variant="h3"   sx={{textAlign:'center',  padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
-                    Experience</Typography>
+                    Projects</Typography>
         </Box>
-        <Box sx={{display:'flex', justifyContent:'center', flexWrap:'wrap', alignItems:'center',gap:10}}>
+        <Box  ref={juniorRef} sx={{display:'flex', justifyContent:'center', flexWrap:'wrap', alignItems:'center',gap:10 }}>
             <CardsProjects photo={photoProject1} title='profile has creagted by pure JS ' git='http://www.google.gom'/>
             <CardsProjects photo={photoProject2} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
             <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
+            {/* <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
+            <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
+            <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/> */}
+        
             {/* <CardsProjects photo={photoProject1} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
             <CardsProjects photo={photoProject1} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
             <CardsProjects photo={photoProject1} title='CMS Project to manage Resturant' git='http://www.google.gom'/> */}

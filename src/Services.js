@@ -3,22 +3,33 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import GppGoodIcon from '@mui/icons-material/GppGood';
+import { useRef ,useEffect} from 'react';
+import scrollReveal from "scrollreveal";
 import {CardActionArea, CardActions } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 export default function Services() {
+    const box = useRef(null)
+    useEffect(() => {
+        if (box.current )
+          scrollReveal().reveal(box.current  , {
+            origin:'top',
+            distance:'80px',
+            duration:2000,
+            delay:200
+          });
+    }, []);
 return (
     <Box sx={{//height:'100vh'
 }} 
     id='services'>
         <Box sx={{paddingTop:'20px'}}>
             <Typography variant='h2' 
-                sx={{ textAlign:"center",color:'silver',padding:'15px 0 15px',margin:'20px 0 -20px',fontSize:15}}> what skill i have </Typography>
+                sx={{ textAlign:"center",color:'silver',padding:'15px 0 15px',margin:'20px 0 -20px',fontSize:15 }}> what I Offer</Typography>
             <Typography  variant="h3"  sx={{textAlign:'center',  padding:'15px 0 30px 0',color:' #4db5ff', fontSize:30}}>
                 Services
             </Typography>
         </Box>
-        <Box sx={{display:'flex',justifyContent:'center' ,gap: 10,margin:'20px 0 '}}>
+        <Box ref={box} className='sereBox' sx={{display:'flex',justifyContent:'center' ,flexWrap:'wrap', gap: 10,margin:'20px 0 '}}>
             <Card className='cardServ' sx={{background:'#253546', width: 345 ,
                 height:410 ,borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
                 <CardActionArea>

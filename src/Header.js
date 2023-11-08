@@ -26,9 +26,7 @@ export default function Header() {
             distance:'80px',
             duration:2000,
             delay:200
-        
           });
-    
     }, []);
     useEffect(() => {
         if (iconsRef.current )
@@ -115,19 +113,19 @@ export default function Header() {
             flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             <Typography variant="h1" sx={{fontSize:'15px'}}> hello! , Iam </Typography>   
             <Typography variant="h2"  sx={{fontSize:35 ,padding:'5px 0 5px'}} ref={ahmedRef}> Ahmed Hussien </Typography>    
-            <Typography variant="p"  sx={{fontSize:'14px',color:'silver',padding:'11px 0 16px'}} ref={juniorRef}>  Fullstack Developer </Typography>
+            <Typography variant="h6"  sx={{fontSize:'14px',color:'silver',padding:'11px 0 16px'}} ref={juniorRef}> Junior Fullstack Developer </Typography>
             <Box sx={{display:"flex",justifyContent:"center",gap:3,marginTop: "20px", width:300           }}>
-                <Button  sx={{fontSize:"11px", width: "70%",padding:2, height: "44px",color:'#4db5ff'}} ref={buttonRightref}
+                <Button className='buttonPro' sx={{fontSize:"11px", width: "70%",padding:2, height: "44px",color:'#4db5ff'}} ref={buttonRightref}
                 variant="outlined">Download CV</Button>
-                <Button sx={{fontSize:"11px",width: "50%",padding:2,height: "44px",color: '#1f1f38', background:'#4db5ff'}} ref={buttonlefttref}
+                <Button  className='buttonPro'  sx={{fontSize:"11px",width: "50%",padding:2,height: "44px",color: '#1f1f38', background:'#4db5ff'}} ref={buttonlefttref}
                 variant="contained">lets Talk</Button>
             </Box>
         </Box>
         <Box style={{}} >
             <Box sx={{position:'relative'}}>
-                <img src={photo} alt=""  ref={photoRef}
-                style={{ position:'inherit',height:'393px' ,borderTopRightRadius:'120px',
-                borderTopLeftRadius: '120px',background: 'black',//bottom: '-25px',
+                <img  className='headerIMG' src={photo} alt=""  ref={photoRef}
+                style={{ position:'inherit',height:'450px' ,borderTopRightRadius:'150px',
+                borderTopLeftRadius: '150px',//bottom: '-25px',
                 
                 background:'linear-gradient(rgb(77 181 255), #cdcdcd00)'
                 }} />   
@@ -137,7 +135,7 @@ export default function Header() {
     <Box sx={{ position: 'relative',bottom: '203px',display:"flex",justifyContent: "space-around",alignItems:'center',gap: "60%",}}> 
         <Box  style={{display:"flex",flexDirection:"column",justifyContent:"center",textAlign:"center",
             gap:10}} ref={iconsRef}>
-                <Fab color="secondary" aria-label="edit" href="https://facebook.com" sx={{height:'35px',width: '35px' ,background:'transparent'}}>
+                <Fab  color="secondary" aria-label="edit" href="https://facebook.com" sx={{height:'35px',width: '35px' ,background:'transparent'}}>
                 <LinkedInIcon sx={{fontSize:16 ,color:'#4db5ff'}} />
                 </Fab>
                 <Fab color="secondary" aria-label="edit" href="https://facebook.com" sx={{height:'35px',width: '35px',background:'transparent'}}>

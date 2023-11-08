@@ -1,4 +1,6 @@
 import photo from './images/kk.png'
+import { useRef ,useEffect} from 'react';
+import scrollReveal from "scrollreveal";
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -7,6 +9,37 @@ import InterpreterModeRoundedIcon from '@mui/icons-material/InterpreterModeRound
 import AllInclusiveRoundedIcon from '@mui/icons-material/AllInclusiveRounded';
 import RequestPageRoundedIcon from '@mui/icons-material/RequestPageRounded';
 export default function AboutMe(){
+    const card = useRef(null);
+    const button = useRef(null)
+    const text = useRef(null)
+
+    useEffect(() => {
+        if (card.current )
+          scrollReveal().reveal(card.current  , {
+            origin:'right',
+            distance:'80px',
+            duration:2000,
+            delay:200
+          });
+    }, []);
+    useEffect(() => {
+        if (button.current )
+          scrollReveal().reveal(button.current  , {
+            origin:'left',
+            distance:'80px',
+            duration:2000,
+            delay:200
+          });
+    }, []);
+    useEffect(() => {
+        if (text.current )
+          scrollReveal().reveal(text.current  , {
+            origin:'bottom',
+            distance:'80px',
+            duration:2000,
+            delay:200
+          });
+    }, []);
     return(
         <Box sx={{ //height:"100vh" ,
             marginTop:"-174px"}} id='about'>
@@ -19,13 +52,13 @@ export default function AboutMe(){
             </Typography>
             </Box>
             
-            <Box style={{display:"flex",justifyContent: "center",alignItems:'center',margin:'0px auto',gap:'160px'}}> 
-                <Box style={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'400px',height:'400px'}}>
-                    <img className='imgAboutMe' src={photo}alt='' 
+            <Box className='aboutmeBox' style={{display:"flex", flexWrap:'wrap', justifyContent: "center",alignItems:'center',margin:'0px auto',gap:'160px'}}> 
+                <Box id='DivimgAbout' className='DivimgAbout' style={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'400px',height:'400px'}}>
+                    <img id='imgAboutMe' className='imgAboutMe' src={photo}alt='' 
                     style={{background:'#31353b',borderRadius:'30px',transition:'1s',width:'400px',height:'400px'}}/>
                 </Box>
-                <Box sx={{}} >
-                <Box sx={{display:"flex",justifyContent: "space-evenly",alignItems:'center',gap:5 ,
+                <Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}} >
+                <Box ref={card} sx={{display:"flex",justifyContent: "space-evenly",alignItems:'center',gap:5 ,flexWrap:'wrap', 
                     }}>
                     <Box >
                         <CardsInnerAboutMe icon ={<AllInclusiveRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} title='Experience' perif='+1 years working'
@@ -39,16 +72,18 @@ export default function AboutMe(){
                     </Box>
                 </Box>
                     <Box sx={{mt:3}}>
-                        <Typography variant='h6' sx={{color:'silver' , mt:5,fontSize:17}} >
-                            Специалист по недвижимости в компании «Этажи». <br/>
-                            Специалист по недвижимости в компании «Этажи»<br/>
-                            Специалист по недвижимости в компании «Этажи»v<br/>
-                            Специалист по недвижимости в компании «Этажи»<br/>
-                            Специалист по недвижимости в компании «Этажи»v<br/>
-                            Специалист по недвижимости в компании «Этажи»<br/>
+                        <Typography  ref ={text}variant='h6' sx={{color:'silver' , mt:5,fontSize:17, p:2}} >
+                        As a diligent and trustworthy individual, I take pride in my work ethic. <br/>
+                        Punctuality is a top priority for me, and I am always eager to expand my skill set<br/>
+                        My amiable personality and sense of humor make me approachable and easy to work with<br/>
+                        Whether working independently or as part of a team, I am able to adapt to any environment<br/>
+                        I possess excellent communication skills and am able to<br/>
+                        am able to effectively listen and solve problems with tact and diplomacy<br/>
+                        I know three languages are <span style={{color:'#4db5ff'}}> [ Arabic ,English ,Russian ] </span>
                         </Typography> 
                     </Box>
-                    <Button sx={{fontSize:"11px" ,width: "23%",height: "44px", mt:5,padding:2,height: "44px",color: '#1f1f38', background:'#4db5ff'}}
+                    <Button ref={button}  className='buttonPro'  
+                    sx={{fontSize:"11px" ,width: "23%",height: "44px", mt:5,padding:2,height: "44px",color: '#1f1f38', background:'#4db5ff'}}
                     variant="contained">lets Talk</Button>
                 </Box>
             </Box>
