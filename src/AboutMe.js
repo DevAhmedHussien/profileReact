@@ -58,7 +58,7 @@ export default function AboutMe(){
                     <img id='imgAboutMe' className='imgAboutMe' src={photo}alt='' 
                     style={{background:'#31353b',borderRadius:'30px',transition:'1s',width:'400px',height:'400px'}}/>
                 </Box>
-                <Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}} >
+                <Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'start'}} >
                 <Box ref={card} sx={{display:"flex",justifyContent: "space-evenly",alignItems:'center',gap:5 ,flexWrap:'wrap', 
                     }}>
                     <Box >
@@ -78,7 +78,7 @@ export default function AboutMe(){
                         Punctuality is a top priority for me, and I am always eager to expand my skill set<br/>
                         My amiable personality and sense of humor make me approachable and easy to work with<br/>
                         Whether working independently or as part of a team, I am able to adapt to any environment<br/>
-                        I possess excellent communication skills and am able to<br/>
+                        I possess excellent communication skills and <br/>
                         am able to effectively listen and solve problems with tact and diplomacy<br/>
                         I know three languages are <span style={{color:'#4db5ff'}}> [ Arabic ,English ,Russian ] </span>
                         </Typography> 
