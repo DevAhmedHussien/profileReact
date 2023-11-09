@@ -84,7 +84,7 @@ return (
     sx={{display:'flex' , flexDirection:'column',alignItems:'center' ,height:'90vh', margin:'20px 0 20px 0'}}>
         <Box sx={{paddingTop:'20px'}}>
             <Typography variant='h2' 
-                    sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> review from clients </Typography>
+                    sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> Review From Clients </Typography>
             <Typography  variant="h3"  sx={{textAlign:'center',  padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
                     Testimonials
             </Typography>
@@ -108,6 +108,7 @@ return (
                     height: 325,
                     display: 'flex',
                     flexDirection:'column',
+                    justifyContent:'center',
                     alignItems:'center',
                     gap:2,
                     overflow:'hidden',
@@ -116,7 +117,7 @@ return (
                     <Avatar alt="Remy Sharp" src= {step.imgPath} sx={{width:'50px' ,height:'50px',
                         boxShadow:'0px 0px 5px 5px #4db5ff'}}/>
                     <Typography variant='h6' sx={{color:'silver'}}>{step.label}</Typography>
-                    <Typography sx={{color:'silver',mt:3,p:5,width:'300px'}}>{step.body}<br/></Typography>
+                    <Typography sx={{color:'silver',mt:1,p:2,width:'300px'}}>{step.body}<br/></Typography>
                     
                 </Box>
                 

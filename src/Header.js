@@ -2,13 +2,14 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Fab from '@mui/material/Fab';
-import photo from'./images/me.png'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useRef ,useEffect} from 'react';
 import scrollReveal from "scrollreveal";
+import profile1 from './images/without2.png'
+import { TypeAnimation } from 'react-type-animation';
 export default function Header() {
 const photoRef = useRef(null);
 const iconsRef = useRef(null)
@@ -107,23 +108,45 @@ const scrollDown =()=>{
         <>
     <Box className='header' id='header' sx={{ height: "100vh", display:"flex",
     flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-      <Box sx={{ height: "100vh", display:"flex",marginTop:'-50px',
+      <Box sx={{ height: "100vh", display:"flex",marginTop:'-5px',
           flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-          <Typography variant="h1" sx={{fontSize:'15px'}}> hello! , Iam </Typography>   
+            <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed once, initially
+                  'السلام عليكم، انا',
+                  1000,
+                  'hello!, Iam',
+                  1000,
+                  'здравствуйте!, Меня Зовут',
+                  1000,
+                  'السلام عليكم',
+                  1000,
+                ]}
+                wrapper="h1"
+                speed={20}
+                style={{ fontSize: '15px',color:'silver' }}
+                repeat={Infinity}
+              />
           <Typography variant="h2"  sx={{fontSize:35 ,padding:'5px 0 5px'}} ref={ahmedRef}> Ahmed Hussien </Typography>    
-          <Typography variant="h6"  sx={{fontSize:'14px',color:'silver',padding:'11px 0 16px'}} ref={juniorRef}> Junior Fullstack Developer </Typography>
-          <Box sx={{display:"flex",justifyContent:"center",gap:3,marginTop: "20px", width:300           }}>
-              <Button className='buttonPro' sx={{fontSize:"11px", width: "70%",padding:2, height: "44px",color:'#4db5ff'}} ref={buttonRightref}
+          <Typography variant="h6"  sx={{fontSize:'14px',color:'silver',padding:'7px 0 16px'}} ref={juniorRef}> Junior Fullstack Developer </Typography>
+          <Box sx={{display:"flex",justifyContent:"center",gap:3,marginTop: "10px", width:300           }}>
+              <Button className='buttonPro' 
+              sx={{fontSize:"11px", width: "70%",padding:2, height: "44px",color:'#4db5ff'}} 
+              ref={buttonRightref}
               variant="outlined">Download CV</Button>
-              <Button  className='buttonPro'  sx={{fontSize:"11px",width: "50%",padding:2,height: "44px",color: '#1f1f38', background:'#4db5ff'}} ref={buttonlefttref}
+              <Button  className='buttonPro'  
+              sx={{fontSize:"11px",width: "50%",padding:2,height: "44px",
+              color: '#1f1f38', background:'#4db5ff'}} 
+              ref={buttonlefttref}
               variant="contained" href='#contact'>lets Talk</Button>
           </Box>
       </Box>
       <Box style={{}} >
           <Box sx={{position:'relative'}}>
-              <img  className='headerIMG' src={photo} alt=""  ref={photoRef}
-              style={{ position:'inherit',height:'400px' ,borderTopRightRadius:'150px',
-              borderTopLeftRadius: '150px',//bottom: '-25px',
+              <img  className='headerIMG' src={profile1} alt=""  ref={photoRef}
+              style={{ position:'inherit'
+              ,borderTopRightRadius:'150px',width:'250px'
+              ,borderTopLeftRadius: '150px',//bottom: '-25px',
 
               background:'linear-gradient(rgb(77 181 255), #cdcdcd00)'
               }} />   
@@ -149,7 +172,7 @@ const scrollDown =()=>{
       <Box> 
               <div style={{
         transform: "rotate(90deg)",fontSize: "15px",color:' #4db5ff',
-        letterSpacing:1,fontWeight:300,cursor:'pointer', marginRight:-20,
+        letterSpacing:1,fontWeight:300,cursor:'pointer', marginRight:-15,
               }}
               onClick={scrollDown} ref={scrollref}>scroll down</div>
               {/* <BasicSpeedDial sx={{}} /> */}

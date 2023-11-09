@@ -11,12 +11,12 @@ export default function Projects() {
     const juniorRef = useRef(null)
     useEffect(() => {
         if (juniorRef.current )
-          scrollReveal().reveal(juniorRef.current  , {
+        scrollReveal().reveal(juniorRef.current  , {
             origin:'bottom',
             distance:'80px',
             duration:2000,
             delay:200
-          });
+        });
     }, []);
 return (
     <Box sx={{}} id='projects'>
@@ -27,9 +27,16 @@ return (
                     Projects</Typography>
         </Box>
         <Box  ref={juniorRef} sx={{display:'flex', justifyContent:'center', flexWrap:'wrap', alignItems:'center',gap:10 }}>
-            <CardsProjects photo={photoProject1} title='profile has creagted by pure JS ' git='http://www.google.gom'/>
-            <CardsProjects photo={photoProject2} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
-            <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
+            <CardsProjects photo={photoProject1} title='Exchange from Rubel to BitCoins'
+            git='https://github.com/DevAhmedHussien?tab=repositories'
+            live='https://melodious-baklava-ad7cc7.netlify.app/'/>
+            <CardsProjects photo={photoProject3} title='practice big todo List by ReactJs  '
+            git='https://github.com/DevAhmedHussien?tab=repositories' 
+            live='https://654d32fc52bd5b0a9a6ce0e6--heartfelt-kelpie-32af91.netlify.app/' />
+            <CardsProjects photo={photoProject2} title='telegramBot to exchange money  '
+            git='https://github.com/DevAhmedHussien?tab=repositories'
+            live='https://github.com/DevAhmedHussien?tab=repositories'/>
+            
             {/* <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
             <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/>
             <CardsProjects photo={photoProject3} title='CMS Project to manage Resturant' git='http://www.google.gom'/> */}

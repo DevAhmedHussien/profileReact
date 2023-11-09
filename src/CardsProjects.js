@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import Box from '@mui/material/Box';
 
-export default function CardsProjects({photo,title,git}) {
+export default function CardsProjects({photo,title,git,live}) {
 return (
     <Card className='proCard' sx={{ maxWidth: 345 , background:'#253546',height:'470px'
     ,borderRadius:7 ,cursor:'pointer' }}>
@@ -27,11 +27,11 @@ return (
         </CardContent>
     </CardActionArea>
     <CardActions sx={{padding:3 ,marginTop:'-15px'}}>
-        <Button className='buttonPro' variant='contained' size="small" color="primary" href={git} 
+        <Button  target='_blank' className='buttonPro' variant='contained' size="small" color="primary" href={git} 
         sx={{height:'36px',background:'#4db5ff' ,color:'#1f242d' ,borderRadius:2}}>
             GitHub
         </Button>
-        <Button  className='buttonPro' size="small" color="primary" href={git}  sx={{height:'36px',color:'#4db5ff',border:'0.5px solid #4db5ff', borderRadius:2}}>
+        <Button  target='_blank' className='buttonPro' size="small" color="primary" href={live}  sx={{height:'36px',color:'#4db5ff',border:'0.5px solid #4db5ff', borderRadius:2}}>
             Live Demo
         </Button>
     </CardActions>

@@ -9,23 +9,12 @@ import Box from '@mui/material/Box';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import InfoIcon from '@mui/icons-material/Info';
 import PsychologyIcon from '@mui/icons-material/Psychology';
-// import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
+
 import VideoLabelIcon from '@mui/icons-material/VideoLabel';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
-// import { useRef ,useEffect} from 'react';
-// import scrollReveal from "scrollreveal";
+
 export default function LabelBottomNavigation() {
-    // const boxRef = useRef(null)
-    // useEffect(() => {
-    //     if (boxRef.current )
-    //         scrollReveal().reveal(boxRef.current  , {
-    //             // origin:'top',
-    //             reset: true,
-    //             distance:'10px',
-    //             duration:2000,
-    //             delay:200
-    //         });
-    // }, []);
+
 const [value, setValue] = React.useState('Home');
 const handleChange = (event, newValue) => {
     setValue(newValue);

@@ -74,7 +74,7 @@ border:0.5px solid #4db5ff;
     transition: 1s !important;
 }
 .cardServ:hover{
-    width: 430px;
+    width: 450px;
     background-color: transparent;
     border:0.5px solid #4db5ff;
     }
@@ -164,7 +164,7 @@ border:0.5px solid #4db5ff;
     }
     }
 
-    @media( max-width:404px ){
+    @media( max-width:417px ){
         #DivimgAbout{
             width: 230px !important;
         height: 230px !important;
@@ -185,6 +185,9 @@ border:0.5px solid #4db5ff;
         }
         .INP{
             width: 330px !important;
+        }
+        .header{
+            margin-top:'-90px',
         }
     }
 

@@ -1,4 +1,4 @@
-import photo from './images/kk.png'
+import profile1 from './images/profile1.png'
 import { useRef ,useEffect} from 'react';
 import scrollReveal from "scrollreveal";
 import Button from '@mui/material/Button';
@@ -45,7 +45,7 @@ export default function AboutMe(){
             <Box sx={{paddingTop:'20px'}}>
             <Typography variant='h2' 
             sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',
-            margin:'20px 0 -20px',fontSize:15,}}> what skill i have </Typography>
+            margin:'20px 0 -20px',fontSize:15,}}> Get To Know </Typography>
             <Typography  variant="h3"  sx={{textAlign:'center',  padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
                 About me
             </Typography>
@@ -54,11 +54,13 @@ export default function AboutMe(){
             <Box className='aboutmeBox' 
             sx={{display:"flex", flexWrap:'wrap', justifyContent: "center"
             ,alignItems:'center',margin:'0px auto',gap:10}}> 
-                <Box id='DivimgAbout' className='DivimgAbout' sx={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'400px',height:'400px'}}>
-                    <img id='imgAboutMe' className='imgAboutMe' src={photo}alt='' 
-                    style={{background:'#31353b',borderRadius:'30px',transition:'1s',width:'400px',height:'400px'}}/>
-                </Box>
-                <Box sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'start'}} >
+                <Box id='DivimgAbout' className='DivimgAbout' sx={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'371px',height:'437px'}}>
+                    <img id='imgAboutMe' className='imgAboutMe' src={profile1}alt='' 
+        style={{background:'#31353b',borderRadius:'30px',transition:'1s'}}/>
+                </Box>  
+                <Box 
+                sx={{display:'flex',flexDirection:'column',
+                justifyContent:'center',alignItems:'start'}} >
                 <Box ref={card} sx={{display:"flex",justifyContent: "space-evenly",alignItems:'center',gap:5 ,flexWrap:'wrap', 
                     }}>
                     <Box >
@@ -72,8 +74,9 @@ export default function AboutMe(){
                         <CardsInnerAboutMe icon ={<RequestPageRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}}  />} title='Projects' perif='+80 complited ' />
                     </Box>
                 </Box>
-                    <Box sx={{mt:3}}>
-                        <Typography  ref ={text}variant='h6' sx={{color:'silver' , mt:5,fontSize:17, p:2}} >
+                    <Box >
+                        <Typography  ref ={text}variant='h6' 
+                        sx={{color:'silver' , mt:2,fontSize:17, p:2}} >
                         As a diligent and trustworthy individual, I take pride in my work ethic. <br/>
                         Punctuality is a top priority for me, and I am always eager to expand my skill set<br/>
                         My amiable personality and sense of humor make me approachable and easy to work with<br/>
@@ -84,7 +87,8 @@ export default function AboutMe(){
                         </Typography> 
                     </Box>
                     <Button ref={button} id='ofay'  className='buttonPro'  
-                    sx={{ marginLeft:2, fontSize:"11px" ,width: "23%",height: "44px", mt:5,padding:2,color: '#1f1f38', background:'#4db5ff'}}
+                    sx={{ marginLeft:2, fontSize:"11px" ,width: "23%",height: "44px", 
+                    mt:2,padding:2,color: '#1f1f38', background:'#4db5ff'}}
                     variant="contained" href='#contact'>lets Talk</Button>
                 </Box>
             </Box>

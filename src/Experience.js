@@ -31,9 +31,9 @@ const back = useRef(null)
         id="Experience">
         <Box sx={{paddingTop:'20px'}}>
             <Typography variant='h2' 
-                sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> what skill I have </Typography>
+                sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> What Skill I Have </Typography>
             <Typography  variant="h3"   sx={{textAlign:'center',   padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
-                Experience
+                My Experience
             </Typography>
         </Box>
         <Box className='exmeBox' sx={{  padding:5 ,display:'flex',justifyContent:'center' , flexWrap:'wrap',  alignItems:'center' , gap:10,}}>
@@ -102,14 +102,14 @@ const back = useRef(null)
                     </Typography>
                 <Box sx={{display:'flex',flexDirection:'column', justifyContent:'center', alignItems:'center',gap:7}}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:20}}>
-                    <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1, }}>
+                    <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1, }}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                             <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/>
                             <Typography variant='h6'  style={{color:'white',fontSize:'17px' }} >NodeJS</Typography>
                         </Box>
-                        <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Intermediate </Typography>
+                        <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Basic </Typography>
                     </Box>
-                        <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1,}}>
+                        <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
                         <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                             <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
                             <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >ExpressJs</Typography>
@@ -118,13 +118,32 @@ const back = useRef(null)
                     </Box>
                     </Box>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:20}}>
-                        <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1,}}>
+                        <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
+                        <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1,}}>
+                            <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
+                            <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >MongoDb</Typography>
+                            </Box>
+                            <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Basic</Typography>
+                        </Box>
+                        <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:20}}>
+                        <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
+                            <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1,}}>
+                            <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
+                            <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >webpack</Typography>
+                            </Box>
+                            <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Basic</Typography>
+                        </Box>
+                    </Box>
+                   
+                    </Box>
+                    <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:20}}>
+                        <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
                         <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1,}}>
                         <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
-                        <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >MongoDb</Typography>
+                        <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >docker</Typography>
                         </Box>
                         <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Basic</Typography>
-                    </Box>
+                        </Box>
                     </Box>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:20}}>
                     </Box>
