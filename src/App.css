@@ -57,11 +57,11 @@ border-radius:50%
 .cartAboutMe:hover{
     background-color: transparent;
 }
-/*  */
+
 .App{
     background-color: var(--bg-color) !important;
     color:var( --text-color) !important;
-    /* letter-spacing: 1px; */
+   
 }
 .cardEx{
     transition:  2s !important;

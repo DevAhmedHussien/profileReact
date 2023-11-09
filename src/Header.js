@@ -108,7 +108,7 @@ const scrollDown =()=>{
         <>
     <Box className='header' id='header' sx={{ height: "100vh", display:"flex",
     flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-      <Box sx={{ height: "100vh", display:"flex",marginTop:'-5px',
+      <Box sx={{ height: "100vh", display:"flex",marginTop:'-30px',
           flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             <TypeAnimation
                 sequence={[
@@ -145,7 +145,7 @@ const scrollDown =()=>{
           <Box sx={{position:'relative'}}>
               <img  className='headerIMG' src={profile1} alt=""  ref={photoRef}
               style={{ position:'inherit'
-              ,borderTopRightRadius:'150px',width:'250px'
+              ,borderTopRightRadius:'150px',width:'250px',height: '420px'
               ,borderTopLeftRadius: '150px',//bottom: '-25px',
 
               background:'linear-gradient(rgb(77 181 255), #cdcdcd00)'
