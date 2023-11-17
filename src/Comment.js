@@ -24,22 +24,22 @@ const images = [
     body:`"The user interface is incredibly intuitive and easy\n
          to navigate, making for a seamless browsing experience."`
 },
-{
-    label: 'Hoda Mahdi',
-    imgPath:
-    y,
-    body:`"The website's design is visually stunning 
-    and truly sets it apart from competitors"`
-},
-{
-    label: 'Amer Hussin',
-    imgPath:
-    f,
-    body:`"The seamless integration with social media 
-    platforms makes it effortless 
-    to share and engage with the website's content, 
-    fostering a sense of community and connectivity."`
-},
+// {
+//     label: 'Hoda Mahdi',
+//     imgPath:
+//     y,
+//     body:`"The website's design is visually stunning 
+//     and truly sets it apart from competitors"`
+// },
+// {
+//     label: 'Amer Hussin',
+//     imgPath:
+//     f,
+//     body:`"The seamless integration with social media 
+//     platforms makes it effortless 
+//     to share and engage with the website's content, 
+//     fostering a sense of community and connectivity."`
+// },
 {
     label: 'Оксана Алесандровна',
     imgPath:
@@ -81,7 +81,8 @@ const handleStepChange = (step) => {
 };
 return (
     <Box  component="div"
-    sx={{display:'flex' , flexDirection:'column',alignItems:'center' ,height:'90vh', margin:'20px 0 20px 0'}}>
+    sx={{display:'flex' , flexDirection:'column', width:'100%',
+    alignItems:'center' ,height:'90vh', margin:'20px 0 20px 0'}}>
         <Box sx={{paddingTop:'20px'}}>
             <Typography variant='h2' 
                     sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> Review From Clients </Typography>
@@ -90,7 +91,8 @@ return (
             </Typography>
         </Box>
         <Box   component="div"
-        sx={{ width: '70%', flexGrow: 1 ,display:'flex' , flexDirection:'column',alignItems:'center'}}>
+        sx={{ width: '70%', flexGrow: 1 ,display:'flex' ,
+        flexDirection:'column',alignItems:'center'}}>
         <AutoPlaySwipeableViews
             axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
             index={activeStep}

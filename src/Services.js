@@ -63,7 +63,7 @@ return (
                 </CardActions>
             </Card>
             <Card className='cardServ'
-            sx={{background:'#253546', width: 430,borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
+            sx={{background:'#253546', width: 400,borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
                 <CardActionArea>
                     <CardContent
                 sx={{background:'#4db5ff',height:60 ,display:'flex',justifyContent:'center',alignItems:'center',

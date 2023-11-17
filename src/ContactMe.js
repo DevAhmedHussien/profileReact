@@ -168,7 +168,7 @@ export default function ContactMe() {
             multiline
             variant="standard"
             inputProps={{
-                style: { width:'500px' ,color:'#4db5ff'},
+                style: { width:'300px' ,color:'#4db5ff'},
               }}
             InputLabelProps={{
                 style: { color: 'silver' },
@@ -184,7 +184,7 @@ export default function ContactMe() {
             defaultValue="Name Project"
             variant="standard"
             inputProps={{
-                style: { width:'500px' ,color:'#4db5ff'},
+                style: { width:'300px' ,color:'#4db5ff'},
               }}
             InputLabelProps={{
                 style: { color: 'silver' },

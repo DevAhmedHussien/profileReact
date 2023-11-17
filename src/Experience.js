@@ -47,14 +47,14 @@ const back = useRef(null)
                     <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1, }}>
                         <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                         <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
-                            <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >HTML</Typography>
+                            <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >HTML5</Typography>
                         </Box>
                         <Typography variant='p'sx={{fontSize:'10px',color:"silver"}}> Experience</Typography>
                     </Box>
                     <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1,}}>
                         <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                         <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
-                            <Typography variant='h6'  sx={{color:'white',fontSize:'17px'}} >-CSS</Typography>
+                            <Typography variant='h6'  sx={{color:'white',fontSize:'17px'}} >CSS/SCSS</Typography>
                         </Box>
                         <Typography variant='p'sx={{fontSize:'10px',color:"silver"}}> Experience</Typography>
                     </Box>
@@ -63,14 +63,14 @@ const back = useRef(null)
                         <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1,}}>
                         <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                         <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
-                            <Typography variant='h6'  sx={{color:'white',fontSize:'17px'}} >JavaS</Typography>
+                            <Typography variant='h6'  sx={{color:'white',fontSize:'17px'}} >JavaScript</Typography>
                         </Box>
                         <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Experience</Typography>
                     </Box>
                         <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1}}>
                             <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                             <   GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
-                                <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >React</Typography>
+                                <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >Reactjs</Typography>
                             </Box>
                             <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Intermediate</Typography>
                         </Box>
@@ -79,16 +79,16 @@ const back = useRef(null)
                     <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1, }}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                     <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
-                            <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >M/Mui</Typography>
+                            <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >Material UI</Typography>
                         </Box>
                         <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Intermediate</Typography>
                     </Box>
                     <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'end',gap:1,}}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                     <GppGoodIcon sx={{color:' #4db5ff' ,fontSize:'18px'}}/> 
-                            <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >BootS</Typography>
+                            <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >Nextjs</Typography>
                         </Box>
-                        <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Experience</Typography>
+                        <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> Intermediate</Typography>
                     </Box>  
                     </Box>
                 </Box>    

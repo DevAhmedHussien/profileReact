@@ -20,10 +20,11 @@ const handleChange = (event, newValue) => {
     setValue(newValue);
 };
 return (
-    <Box className='bottomNavigation'  
+    <Box className='bottomNavigation' 
     sx={{width: '100vw',opacity:'0.6',position:'fixed',bottom:'5px',zIndex:100,
     display:'flex',justifyContent:'center',alignItems:'center'}}>
-    <BottomNavigation sx={{width:600, borderRadius: '30px',background:'#31353b',}} 
+    <BottomNavigation className='navBar' 
+     sx={{width:600, borderRadius: '30px',background:'#31353b',}} 
     value={value} onChange={handleChange} //ref={boxRef}
     >
     <BottomNavigationAction sx={{width:'50px'}} 

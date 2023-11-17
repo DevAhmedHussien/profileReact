@@ -61,7 +61,8 @@ export default function AboutMe(){
                 <Box 
                 sx={{display:'flex',flexDirection:'column',
                 justifyContent:'center',alignItems:'start'}} >
-                <Box ref={card} sx={{display:"flex",justifyContent: "space-evenly",alignItems:'center',gap:5 ,flexWrap:'wrap', 
+                <Box ref={card} 
+                sx={{display:"flex",justifyContent: "space-evenly",alignItems:'center',gap:1 ,flexWrap:'wrap', 
                     }}>
                     <Box >
                         <CardsInnerAboutMe icon ={<AllInclusiveRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} title='Experience' perif='+1 years working'
@@ -83,7 +84,7 @@ export default function AboutMe(){
                         Whether working independently or as part of a team, I am able to adapt to any environment<br/>
                         I possess excellent communication skills and <br/>
                         am able to effectively listen and solve problems with tact and diplomacy<br/>
-                        I know three languages are <span style={{color:'#4db5ff'}}> [ Arabic ,English ,Russian ] </span>
+                        I know three languages  <span style={{color:'#4db5ff'}}> [ Arabic ,English ,Russian ] </span>
                         </Typography> 
                     </Box>
                     <Button ref={button} id='ofay'  className='buttonPro'  
