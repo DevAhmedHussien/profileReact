@@ -62,7 +62,7 @@ export default function AboutMe(){
                 sx={{display:'flex',flexDirection:'column',
                 justifyContent:'center',alignItems:'start'}} >
                 <Box ref={card} 
-                sx={{display:"flex",justifyContent: "space-evenly",alignItems:'center',gap:1 ,flexWrap:'wrap', 
+                sx={{width: '100%',display:"flex",justifyContent: "space-around",alignItems:'center',gap:1 ,flexWrap:'wrap', 
                     }}>
                     <Box >
                         <CardsInnerAboutMe icon ={<AllInclusiveRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} title='Experience' perif='+1 years working'
@@ -88,7 +88,7 @@ export default function AboutMe(){
                         </Typography> 
                     </Box>
                     <Button ref={button} id='ofay'  className='buttonPro'  
-                    sx={{ marginLeft:2, fontSize:"11px" ,width: "23%",height: "44px", 
+                    sx={{ marginLeft:2, fontSize:"11px" ,width: "25%",height: "44px", 
                     mt:2,padding:2,color: '#1f1f38', background:'#4db5ff'}}
                     variant="contained" href='#contact'>lets Talk</Button>
                 </Box>

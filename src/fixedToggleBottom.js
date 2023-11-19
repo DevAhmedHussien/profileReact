@@ -24,7 +24,7 @@ return (
     sx={{width: '100vw',opacity:'0.6',position:'fixed',bottom:'5px',zIndex:100,
     display:'flex',justifyContent:'center',alignItems:'center'}}>
     <BottomNavigation className='navBar' 
-     sx={{width:600, borderRadius: '30px',background:'#31353b',}} 
+     sx={{width:400, borderRadius: '30px',background:'#31353b',}} 
     value={value} onChange={handleChange} //ref={boxRef}
     >
     <BottomNavigationAction sx={{width:'50px'}} 

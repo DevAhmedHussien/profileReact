@@ -142,7 +142,7 @@ const scrollDown =()=>{
           </Box>
       </Box>
       <Box style={{}} >
-          <Box sx={{position:'relative'}}>
+          <Box className='imageBlock' sx={{position:'relative'}}>
               <img  className='headerIMG' src={profile1} alt=""  ref={photoRef}
               style={{ position:'inherit'
               ,borderTopRightRadius:'150px',width:'250px',height: '420px'
@@ -153,7 +153,7 @@ const scrollDown =()=>{
           </Box>
       </Box>
     </Box>
-    <Box sx={{ position: 'relative',bottom: '203px',display:"flex",justifyContent: "space-around",alignItems:'center',gap: "60%",}}> 
+    <Box className='hamada'sx={{ position: 'relative',bottom: '225px',display:"flex",justifyContent: "space-around",alignItems:'center',gap: "60%",}}> 
       <Box  style={{display:"flex",flexDirection:"column",justifyContent:"center",textAlign:"center",
           gap:10}} ref={iconsRef}>
         <Fab  color="secondary" aria-label="LinkedIn" target='_blank' href="https://www.linkedin.com " sx={{height:'35px',width: '35px' ,background:'transparent'}}>

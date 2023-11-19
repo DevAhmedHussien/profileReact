@@ -30,18 +30,18 @@ function App() {
   })
   return (
     <ThemeProvider theme={theme}>  
-        <div className="App">
-          <Header/>
-          <LabelBottomNavigation/>
-          <AboutMe/>
-          <Experience/>
-          <Services/>
-          <Projects/>
-          <Comment/>
-          <ContactMe/>
-          <Footer/>
-        </div>
-      </ThemeProvider>
+      <div className="App">
+        <Header/>
+        <LabelBottomNavigation/>
+        <AboutMe/>
+        <Experience/>
+        <Services/>
+        <Projects/>
+        {/* <Comment/> */}
+        <ContactMe/>
+        <Footer/>
+      </div>
+    </ThemeProvider>
   );
 }
 

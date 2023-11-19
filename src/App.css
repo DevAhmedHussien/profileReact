@@ -114,15 +114,18 @@ border:0.5px solid #4db5ff;
     .app{
         width:100% !important;
     }
+    .header{
+        height: 100vh;
+    }
     .navBar {
         width: 100%;
     } 
     .aboutmeBox{
-            flex-direction: column;
+        flex-direction: column;
     }
     #DivimgAbout{
         width: 270 !important;
-    height: 270 !important;
+        height: 270 !important;
     }
     #imgAboutMe{
         width: 270 !important;
@@ -137,22 +140,42 @@ border:0.5px solid #4db5ff;
         background-color: red;
     }
     #exCardd{
-        width: 400px; ;
+        width: 400px; 
     }
     .INP{
         width: 350px !important;
     }
     .ConCardBox{
         flex-direction: row !important;
+       
     }
     .cartAboutMe{
         width: 150px !important;
         height: 150px !important;;
     }
+    .cardServ{
+        width:92% !important;
     }
-    @media( max-width:417px ){
+    .cardEx{
+        width:335px !important;
+    }
+    .headerIMG{
+        margin-bottom: 55px !important;
+    }
+    .navBar {
+        width: 98% !important;
+    } 
+    .hamada{
+        bottom: 250px;
+    }
+    
+    }
+    @media( max-width:430px ){
+        .header{
+            height: 100%;
+        }
         .navBar {
-            width: 100%;
+            width: 98% !important;
         } 
         .app{
             width:100% !important;
@@ -160,27 +183,34 @@ border:0.5px solid #4db5ff;
         #DivimgAbout{
             width: 230px !important;
         height: 230px !important;
-            /* background-color: green !important; */
         }
         #imgAboutMe{
             width: 230px !important;
             height: 230px !important;
         }
-        #exCardd{
-            width: 350px; 
-        }
         .INP{
             width: 330px !important;
         }
         .header{
-            margin-top:'-50px',
+            height: 100%;
+        }
+        .headerIMG{
+            margin-bottom: 55px !important;
+        } .hamada{
+            bottom: 250px;
         }
     }
     @media( max-width:370 ){
         .navBar {
-            width: 100%;
+            width: 98% !important;
         } 
         .app{
             width:100% !important;
+        }
+        .headerIMG{
+            margin-bottom: 55px !important;
+        } 
+        .hamada{
+            bottom: 250px;
         }
     }

@@ -30,7 +30,7 @@ return (
             </Typography>
         </Box>
         <Box ref={box} className='sereBox' sx={{display:'flex',justifyContent:'center' ,flexWrap:'wrap', gap: 10,margin:'20px 0 '}}>
-            <Card className='cardServ' sx={{background:'#253546', width: 400, height:610 ,
+            <Card className='cardServ' sx={{background:'#253546', width: 380, height:610 ,
                 borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
                 <CardActionArea>
                     <CardContent
@@ -63,7 +63,7 @@ return (
                 </CardActions>
             </Card>
             <Card className='cardServ'
-            sx={{background:'#253546', width: 400,borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
+            sx={{background:'#253546', width: 380,borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
                 <CardActionArea>
                     <CardContent
                 sx={{background:'#4db5ff',height:60 ,display:'flex',justifyContent:'center',alignItems:'center',
@@ -74,7 +74,9 @@ return (
                     </CardContent>
                 </CardActionArea>
                 <CardActions sx={{}}>
-                <Box sx={{padding:3 , display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:2,}}>
+                <Box 
+                sx={{padding:3 , display:'flex',flexDirection:'column',justifyContent:'center',
+                alignItems:'center',gap:2,}}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'start',gap:1, }}>
                     <CheckIcon sx={{color:' #4db5ff' , fontSize:'15px' ,mt:1}}/>
                     <Typography variant='h6'  style={{color:'silver',fontSize:'17px'}} >reating visually appealing and user-friendly interfaces that align with the brand identity and provide an optimal user experience.</Typography>
@@ -102,7 +104,7 @@ return (
                 </Box>
                 </CardActions>
             </Card>    
-            <Card className='cardServ' sx={{background:'#253546', width: 400, height:610 ,borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
+            <Card className='cardServ' sx={{background:'#253546', width: 380, height:610 ,borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px',cursor:'pointer'}}>
                 <CardActionArea>
                     <CardContent
             sx={{background:'#4db5ff',height:60 ,display:'flex',justifyContent:'center',alignItems:'center',
