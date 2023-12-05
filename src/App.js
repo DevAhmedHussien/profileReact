@@ -11,6 +11,7 @@ import Comment from './Comment';
 import { createTheme,ThemeProvider } from '@mui/material';
 function App() {
   const theme =createTheme({
+    
     typography:{
       fontFamily: ["AhmedBold"],
       fontWeightLight:500
@@ -20,6 +21,7 @@ function App() {
       fontWeightLight:400
     },
     palette:{
+      type: "dark",
       primary :{
         main:'#4db5ff'
       },
@@ -37,7 +39,7 @@ function App() {
         <Experience/>
         <Services/>
         <Projects/>
-        {/* <Comment/> */}
+        <Comment/>
         <ContactMe/>
         <Footer/>
       </div>

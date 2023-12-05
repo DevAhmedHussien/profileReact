@@ -49,8 +49,8 @@ export default function ContactMe() {
   useEffect(() => {
       if (email.current )
         scrollReveal().reveal(email.current  , {
-          origin:'right',
-          distance:'100px',
+          // origin:'right',
+          distance:'40px',
           duration:2000,
           delay:200
         });
@@ -59,8 +59,8 @@ export default function ContactMe() {
   useEffect(() => {
       if (card.current )
         scrollReveal().reveal(card.current  , {
-          origin:'left',
-          distance:'100px',
+          // origin:'left',
+          distance:'40px',
           duration:2000,
           delay:200
         });

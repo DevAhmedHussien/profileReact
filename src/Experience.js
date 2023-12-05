@@ -12,7 +12,7 @@ const back = useRef(null)
         if (front.current )
         scrollReveal().reveal(front.current  , {
             origin:'left',
-            distance:'80px',
+            // distance:'40px',
             duration:2000,
             delay:200
         });
@@ -21,7 +21,7 @@ const back = useRef(null)
         if (back.current )
         scrollReveal().reveal(back.current  , {
             origin:'right',
-            distance:'120px',
+            // distance:'40px',
             duration:2000,
             delay:200
         });

@@ -32,14 +32,17 @@
     }
 
 .App{
-    background-color: #253546 !important;
-    /* #253546 !important; */
-    /* #1f1d36; */
+    background-color: var(--bg-color) !important;
     width:100% !important;
-    color:var(--text-color);
+    color:var( --text-color) !important;
     scroll-behavior: smooth;
 }
-
+.App-light{
+    /* background-color:var(--text-color) !important;
+    width:100% !important;
+    color:var(--second-color);
+    scroll-behavior: smooth; */
+}
 .imgAboutMe:hover{
     transform: rotate(15deg);
 }
@@ -59,10 +62,7 @@ border-radius:50%
     background-color: transparent;
 }
 
-.App{
-    background-color: var(--bg-color) !important;
-    color:var( --text-color) !important;
-}
+
 .cardEx{
     transition:  2s !important;
 }
@@ -140,7 +140,7 @@ border:0.5px solid #4db5ff;
         background-color: red;
     }
     #exCardd{
-        width: 400px; 
+        padding: 20px;
     }
     .INP{
         width: 350px !important;
@@ -170,7 +170,7 @@ border:0.5px solid #4db5ff;
     }
     
     }
-    @media( max-width:430px ){
+@media( max-width:429px ){
         .header{
             height: 100%;
         }
@@ -199,8 +199,11 @@ border:0.5px solid #4db5ff;
         } .hamada{
             bottom: 250px;
         }
-    }
-    @media( max-width:370 ){
+        #exCardd{
+            padding: 10px;
+        }
+}
+@media( max-width:370 ){
         .navBar {
             width: 98% !important;
         } 
@@ -213,4 +216,4 @@ border:0.5px solid #4db5ff;
         .hamada{
             bottom: 250px;
         }
-    }
+}

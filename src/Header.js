@@ -22,7 +22,7 @@ useEffect(() => {
     if (photoRef.current )
       scrollReveal().reveal(photoRef.current  , {
         origin:'top',
-        distance:'80px',
+        distance:'40px',
         duration:2000,
         delay:200
       });
@@ -31,7 +31,7 @@ useEffect(() => {
     if (iconsRef.current )
       scrollReveal().reveal(iconsRef.current  , {
         origin:'right',
-        distance:'80px',
+        distance:'40px',
         duration:2000,
         delay:200
       });
@@ -40,7 +40,7 @@ useEffect(() => {
     if (scrollref.current )
       scrollReveal().reveal(scrollref.current  , {
         origin:'down',
-        distance:'80px',
+        distance:'40px',
         duration:2000,
         delay:200
     
@@ -50,7 +50,7 @@ useEffect(() => {
         if (buttonRightref.current )
           scrollReveal().reveal(buttonRightref.current  , {
             origin:'left',
-            distance:'80px',
+            distance:'40px',
             duration:2000,
             delay:200
         
@@ -60,7 +60,7 @@ useEffect(() => {
     if (buttonlefttref.current )
       scrollReveal().reveal(buttonlefttref.current  , {
         origin:'right',
-        distance:'80px',
+        distance:'40px',
         duration:2000,
         delay:200
     
@@ -70,7 +70,7 @@ useEffect(() => {
     if (scrollref.current )
       scrollReveal().reveal(scrollref.current  , {
         origin:'right',
-        distance:'80px',
+        distance:'40px',
         duration:2000,
         delay:200
     
@@ -80,7 +80,7 @@ useEffect(() => {
     if (ahmedRef.current )
       scrollReveal().reveal(ahmedRef.current  , {
         origin:'right',
-        distance:'80px',
+        distance:'40px',
         duration:2000,
         delay:200
     
@@ -90,7 +90,7 @@ useEffect(() => {
     if (juniorRef.current )
       scrollReveal().reveal(juniorRef.current  , {
         origin:'left',
-        distance:'80px',
+        distance:'40px',
         duration:2000,
         delay:200
     

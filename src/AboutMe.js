@@ -15,8 +15,8 @@ export default function AboutMe(){
     useEffect(() => {
         if (card.current)
           scrollReveal().reveal(card.current  , {
-            origin:'right',
-            distance:'80px',
+            origin:'top',
+            distance:'40px',
             duration:2000,
             delay:200
           });
@@ -24,21 +24,23 @@ export default function AboutMe(){
     useEffect(() => {
         if (button.current )
           scrollReveal().reveal(button.current  , {
-            origin:'left',
-            distance:'80px',
+            origin:'bottom',
+            distance:'40px',
             duration:2000,
             delay:200
           });
-    }, []);
+    }
+    , []);
     useEffect(() => {
         if (text.current )
           scrollReveal().reveal(text.current  , {
             origin:'bottom',
-            distance:'80px',
+            distance:'40px',
             duration:2000,
             delay:200
         });
-    }, []);
+    }
+    , []);
     return(
         <Box sx={{ //height:"100vh" ,
             marginTop:"-174px"}} id='about'>
