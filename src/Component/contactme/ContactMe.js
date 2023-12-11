@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import CardsInnerAboutMe from './CardsInnerAboutMe'
+import CardsInnerAboutMe from '../about/CardsInnerAboutMe'
 import { Typography } from '@mui/material';
 import MarkunreadIcon from '@mui/icons-material/Markunread';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -13,6 +13,7 @@ import emailjs from '@emailjs/browser';
 import scrollReveal from "scrollreveal";
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+import IconButton from '@mui/material/IconButton';
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -126,19 +127,28 @@ export default function ContactMe() {
       <Box className='ConCardBox' ref={ card }
     sx={{display:'flex',flexDirection:'column', flexWrap:'wrap',justifyContent:'center', gap:2 }} >
       <Box>
-        <CardsInnerAboutMe icon ={<MarkunreadIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} 
+        <CardsInnerAboutMe icon ={
+        <IconButton target='_blank' sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru' >
+          <MarkunreadIcon sx={{fontSize:35 ,color:'#4db5ff'}} />
+        </IconButton>} 
         title='E-mail' perif='a.abdelmaksoud@mail.ru'
         sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru'
         />
         </Box>
         <Box>
-        <CardsInnerAboutMe icon ={<WhatsAppIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} 
+        <CardsInnerAboutMe icon ={
+          <IconButton   sendM='Send a message' href='https://wa.me/79821313577?' target='_blank' >
+            <WhatsAppIcon  sx={{fontSize:35 ,color:'#4db5ff'}} /> 
+          </IconButton>}
           title='WhatsApp' perif='+7(982)131-35-77' 
           sendM='Send a message' href='https://wa.me/79821313577?'
           />
       </Box>
       <Box>
-          <CardsInnerAboutMe icon ={<TelegramIcon sx={{fontSize:35 ,color:'#4db5ff'}}  />} 
+          <CardsInnerAboutMe icon ={
+          <IconButton   sendM='Send a message' href='https://t.me/mango12198' target='_blank' >
+            <TelegramIcon  sx={{fontSize:35 ,color:'#4db5ff'}}  />
+          </IconButton>} 
                 title='Telegram' perif='Ahmed Hussien'
                 sendM='Send a message' href='https://t.me/mango12198'
                 />

@@ -31,18 +31,18 @@
         font-weight: 200;
     }
 
-.App{
+/* .App{
     background-color: var(--bg-color) !important;
     width:100% !important;
     color:var( --text-color) !important;
     scroll-behavior: smooth;
-}
-.App-light{
-    /* background-color:var(--text-color) !important;
+} */
+/* .App-light{
+    background-color:var(--text-color) !important;
     width:100% !important;
     color:var(--second-color);
-    scroll-behavior: smooth; */
-}
+    scroll-behavior: smooth;
+} */
 .imgAboutMe:hover{
     transform: rotate(15deg);
 }

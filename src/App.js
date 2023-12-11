@@ -1,39 +1,47 @@
-import AboutMe from './AboutMe';
 import './App.css';
-import Header from './Header'
-import Experience from './Experience';
-import LabelBottomNavigation from './fixedToggleBottom';
-import Services from './Services';
-import Projects from './Projects';
-import ContactMe from './ContactMe';
-import Footer from'./Footer'
-import Comment from './Comment';
-import { createTheme,ThemeProvider } from '@mui/material';
+import AboutMe from './Component/about/AboutMe';
+import Header from './Component/header/Header'
+import Experience from './Component/experience/Experience';
+import LabelBottomNavigation from './Component/navbarToggle/fixedToggleBottom';
+import Services from './Component/servicee/Services';
+import Projects from './Component/projectss/Projects';
+import ContactMe from './Component/contactme/ContactMe';
+import Footer from'./Component/footer/Footer'
+import Comment from './Component/comment/Comment';
+import CustomizedSwitches from './Component/navbarToggle/DarkMode';   
+import {ThemeProvider  } from '@mui/material';
+import {useMode} from './Context/ThemeContext'
+import { ColorModeContext,tokens} from './Context/ThemeContext'
+
 function App() {
-  const theme =createTheme({
-    
-    typography:{
-      fontFamily: ["AhmedBold"],
-      fontWeightLight:500
-    },
-    paragraph:{
-      fontFamily: ["AhmedBold"],
-      fontWeightLight:400
-    },
-    palette:{
-      type: "dark",
-      primary :{
-        main:'#4db5ff'
-      },
-      secondary:{
-        main:'#4db5ff'
-      }
-    }
-  })
+  const [theme, toggleColorMode , mode] = useMode();
+  const colors = tokens(theme.palette.mode);
+// const theme = createTheme({
+//   palette:{
+//     primary :{
+//       main:'#1f242d'
+//     },
+//     secondary:{
+//       main:'#4db5ff'
+//     }
+//   },
+  // typography:{
+  //   fontFamily: ["AhmedBold"],
+  //   fontWeightLight:500
+  // },
+  // paragraph:{
+  //   fontFamily: ["AhmedBold"],
+  //   fontWeightLight:400
+  // },
+// })  
   return (
+    // <ColorProvider>
     <ThemeProvider theme={theme}>  
-      <div className="App">
+      <ColorModeContext.Provider value={{toggleColorMode,theme,mode}}>
+      <div className= "App" style={{ backgroundColor: colors.primary[100]}}> 
+     
         <Header/>
+        <CustomizedSwitches  /> 
         <LabelBottomNavigation/>
         <AboutMe/>
         <Experience/>
@@ -42,7 +50,8 @@ function App() {
         <Comment/>
         <ContactMe/>
         <Footer/>
-      </div>
+      </div>  
+        </ColorModeContext.Provider>
     </ThemeProvider>
   );
 }

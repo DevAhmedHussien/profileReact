@@ -8,8 +8,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { useRef ,useEffect} from 'react';
 import scrollReveal from "scrollreveal";
-import profile1 from './images/without2.png'
+import profile1 from '../../images/without2.png'
 import { TypeAnimation } from 'react-type-animation';
+import { tokens } from '../../Context/ThemeContext';
+import { useTheme } from '@mui/material';
 export default function Header() {
 const photoRef = useRef(null);
 const iconsRef = useRef(null)
@@ -103,7 +105,8 @@ const scrollDown =()=>{
             behavior:"smooth"
         })
 }
-    
+const theme = useTheme();
+const colors = tokens(theme.palette.mode);
     return (
         <>
     <Box className='header' id='header' sx={{ height: "100vh", display:"flex",
@@ -124,19 +127,30 @@ const scrollDown =()=>{
                 ]}
                 wrapper="h1"
                 speed={20}
-                style={{ fontSize: '15px',color:'silver' }}
+                style={{ fontSize: '15px' , color :colors.primary[200] ,// background:'#6870fa'
+              }}
                 repeat={Infinity}
               />
-          <Typography variant="h2"  sx={{fontSize:35 ,padding:'5px 0 5px'}} ref={ahmedRef}> Ahmed Hussien </Typography>    
-          <Typography variant="h6"  sx={{fontSize:'14px',color:'silver',padding:'7px 0 16px'}} ref={juniorRef}> Junior Fullstack Developer </Typography>
-          <Box sx={{display:"flex",justifyContent:"center",gap:3,marginTop: "10px", width:300           }}>
-              <Button className='buttonPro' 
-              sx={{fontSize:"11px", width: "70%",padding:2, height: "44px",color:'#4db5ff'}} 
+          <Typography variant="h2" color={colors.primary[300]} 
+          sx={{fontSize:35 ,padding:'5px 0 5px'}} 
+          ref={ahmedRef}> Ahmed Hussien </Typography>    
+          <Typography  color={colors.primary[300]}  variant="h6"  
+          sx={{fontSize:'14px',//color:colors.primary[300],
+          padding:'7px 0 16px'}} ref={juniorRef}> Junior Fullstack Developer </Typography>
+          <Box 
+          sx={{display:"flex",justifyContent:"center",gap:3,marginTop: "10px", width:300  }}>
+              <Button className='buttonPro'
+              sx={{fontSize:"11px", width: "70%",padding:2, height: "44px",
+              color:colors.primary[400]//,color:'#4db5ff' 
+            }} 
               ref={buttonRightref}
               variant="outlined">Download CV</Button>
               <Button  className='buttonPro'  
               sx={{fontSize:"11px",width: "50%",padding:2,height: "44px",
-              color: '#1f1f38', background:'#4db5ff'}} 
+              //color: '#1f1f38', background:'#4db5ff'  
+              color: 'white'//colors.primary[200] 
+              , background:colors.primary[400] 
+            }} 
               ref={buttonlefttref}
               variant="contained" href='#contact'>lets Talk</Button>
           </Box>
@@ -146,32 +160,38 @@ const scrollDown =()=>{
               <img  className='headerIMG' src={profile1} alt=""  ref={photoRef}
               style={{ position:'inherit'
               ,borderTopRightRadius:'150px',width:'250px',height: '420px'
-              ,borderTopLeftRadius: '150px',//bottom: '-25px',
-
-              background:'linear-gradient(rgb(77 181 255), #cdcdcd00)'
+              ,borderTopLeftRadius: '150px',
+              background:colors.primary[1000] //'linear-gradient(rgb(77 181 255), #cdcdcd00)'
               }} />   
           </Box>
       </Box>
     </Box>
-    <Box className='hamada'sx={{ position: 'relative',bottom: '225px',display:"flex",justifyContent: "space-around",alignItems:'center',gap: "60%",}}> 
-      <Box  style={{display:"flex",flexDirection:"column",justifyContent:"center",textAlign:"center",
-          gap:10}} ref={iconsRef}>
-        <Fab  color="secondary" aria-label="LinkedIn" target='_blank' href="https://www.linkedin.com " sx={{height:'35px',width: '35px' ,background:'transparent'}}>
-        <LinkedInIcon sx={{fontSize:16 ,color:'#4db5ff'}} />
+    <Box className='hamada'
+    sx={{ position: 'relative',bottom: '225px',display:"flex",
+    justifyContent: "space-around",alignItems:'center',gap: "60%",}}> 
+      <Box  style={{display:"flex",flexDirection:"column",justifyContent:"center",
+      textAlign:"center", gap:10}} ref={iconsRef}>
+        <Fab   aria-label="LinkedIn" target='_blank' 
+        href="https://www.linkedin.com " sx={{height:'35px',width: '35px' ,background:'transparent'}}>
+        <LinkedInIcon sx={{fontSize:16 ,color:colors.primary[600]}} />
         </Fab>
-        <Fab color="secondary" aria-label="Facebook" target='_blank' href="https://www.facebook.com/ahmed.frankoo?mibextid=LQQJ4d" sx={{height:'35px',width: '35px',background:'transparent'}}>
-        <FacebookIcon  sx={{fontSize:16 ,color:'#4db5ff'}}/>
+        <Fab  aria-label="Facebook" target='_blank' 
+        href="https://www.facebook.com/ahmed.frankoo?mibextid=LQQJ4d" sx={{height:'35px',width: '35px',background:'transparent'}}>
+        <FacebookIcon  sx={{fontSize:16 ,color:colors.primary[600]}}/>
         </Fab>
-        <Fab color="secondary" aria-label="Instagram" target='_blank' href="https://instagram.com/ahmed.frankoo?igshid=Nzd3djU4MThqMGh6&utm_source=qr" sx={{height:'35px',width: '35px',background:'transparent'}}>
-        <InstagramIcon sx={{fontSize:16 ,color:'#4db5ff'}} />
+        <Fab aria-label="Instagram" target='_blank' 
+        href="https://instagram.com/ahmed.frankoo?igshid=Nzd3djU4MThqMGh6&utm_source=qr" 
+        sx={{height:'35px',width: '35px',background:'transparent'}}>
+        <InstagramIcon sx={{fontSize:16 ,color:colors.primary[600]}} />
         </Fab>
-        <Fab color="secondary" aria-label="Github" target='_blank' href="https://github.com/DevAhmedHussien" sx={{height:'35px',width: '35px',background:'transparent'}}>
-        <GitHubIcon sx={{fontSize:16 ,color:'#4db5ff'}} />
+        <Fab  aria-label="Github" target='_blank' href="https://github.com/DevAhmedHussien" 
+        sx={{height:'35px',width: '35px',background:'transparent'}}>
+        <GitHubIcon sx={{fontSize:16 ,color:colors.primary[600]}} />
         </Fab>
       </Box>
       <Box> 
               <div style={{
-        transform: "rotate(90deg)",fontSize: "15px",color:' #4db5ff',
+        transform: "rotate(90deg)",fontSize: "15px",color:colors.primary[400],
         letterSpacing:1,fontWeight:300,cursor:'pointer', marginRight:-15,
               }}
               onClick={scrollDown} ref={scrollref}>scroll down</div>
