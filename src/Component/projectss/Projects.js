@@ -10,6 +10,9 @@ import photoProject6 from '../../images/portfolio6.jpg'
 import CardsProjects from './CardsProjects';
 import scrollReveal from "scrollreveal";
 import { useRef ,useEffect} from 'react';
+import { tokens } from '../../Context/ThemeContext';
+import { useTheme } from '@mui/material';
+
 export default function Projects() {
     const juniorRef = useRef(null)
     useEffect(() => {
@@ -21,12 +24,15 @@ export default function Projects() {
             delay:200
         });
     }, []);
+    const theme = useTheme();
+const colors = tokens(theme.palette.mode);
 return (
     <Box sx={{}} id='projects'>
         <Box sx={{paddingTop:'30px'}}>
-            <Typography variant='h2' 
-                    sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> My Recent Work </Typography>
-            <Typography  variant="h3"   sx={{textAlign:'center',  padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
+            <Typography variant='h3' 
+                    sx={{ textAlign:"center",color:colors.primary[300],padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> My Recent Work </Typography>
+            <Typography  variant="h2"  color={colors.primary[400]}  
+            sx={{textAlign:'center',  padding:'15px 0 50px 0'}}>
                     Projects</Typography>
         </Box>
         <Box  ref={juniorRef} sx={{display:'flex', justifyContent:'center', flexWrap:'wrap', alignItems:'center',gap:10 }}>

@@ -84,7 +84,7 @@ const colors = tokens(theme.palette.mode);
                 </Box>
                     <Box >
                         <Typography  ref ={text} variant='h6' 
-                        sx={{color:colors.primary[300], mt:2,fontSize:17, p:2}} >
+                        sx={{color:colors.primary[150], mt:2,fontSize:17, p:2}} >
                         As a diligent and trustworthy individual, I take pride in my work ethic. <br/>
                         Punctuality is a top priority for me, and I am always eager to expand my skill set<br/>
                         My amiable personality and sense of humor make me approachable and easy to work with<br/>

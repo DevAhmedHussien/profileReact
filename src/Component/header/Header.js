@@ -33,7 +33,7 @@ useEffect(() => {
     if (iconsRef.current )
       scrollReveal().reveal(iconsRef.current  , {
         origin:'right',
-        distance:'40px',
+        // distance:'40px',
         duration:2000,
         delay:200
       });
@@ -52,7 +52,7 @@ useEffect(() => {
         if (buttonRightref.current )
           scrollReveal().reveal(buttonRightref.current  , {
             origin:'left',
-            distance:'40px',
+            // distance:'40px',
             duration:2000,
             delay:200
         
@@ -62,7 +62,7 @@ useEffect(() => {
     if (buttonlefttref.current )
       scrollReveal().reveal(buttonlefttref.current  , {
         origin:'right',
-        distance:'40px',
+        // distance:'40px',
         duration:2000,
         delay:200
     
@@ -72,7 +72,7 @@ useEffect(() => {
     if (scrollref.current )
       scrollReveal().reveal(scrollref.current  , {
         origin:'right',
-        distance:'40px',
+        // distance:'40px',
         duration:2000,
         delay:200
     
@@ -82,7 +82,7 @@ useEffect(() => {
     if (ahmedRef.current )
       scrollReveal().reveal(ahmedRef.current  , {
         origin:'right',
-        distance:'40px',
+        // distance:'40px',
         duration:2000,
         delay:200
     
@@ -92,7 +92,7 @@ useEffect(() => {
     if (juniorRef.current )
       scrollReveal().reveal(juniorRef.current  , {
         origin:'left',
-        distance:'40px',
+        // distance:'40px',
         duration:2000,
         delay:200
     
@@ -115,7 +115,6 @@ const colors = tokens(theme.palette.mode);
           flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             <TypeAnimation
                 sequence={[
-                  // Same substring at the start will only be typed once, initially
                   'السلام عليكم، انا',
                   1000,
                   'hello!, Iam',
@@ -131,7 +130,7 @@ const colors = tokens(theme.palette.mode);
               }}
                 repeat={Infinity}
               />
-          <Typography variant="h2" color={colors.primary[300]} 
+          <Typography variant="h2" color={colors.primary[150]} 
           sx={{fontSize:35 ,padding:'5px 0 5px'}} 
           ref={ahmedRef}> Ahmed Hussien </Typography>    
           <Typography  color={colors.primary[300]}  variant="h6"  

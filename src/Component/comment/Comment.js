@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MobileStepper from '@mui/material/MobileStepper';
 import Typography from '@mui/material/Typography';
@@ -11,9 +11,9 @@ import SwipeableViews from 'react-swipeable-views';
 import { Paper } from '@mui/material';
 import { autoPlay } from 'react-swipeable-views-utils';
 import Avatar from '@mui/material/Avatar';
+import { tokens } from '../../Context/ThemeContext';
+import { useTheme } from '@mui/material';
 import x from '../../images/kk.png'
-import y from '../../images/avatar4.jpg'
-import f from '../../images/avatar2.jpg'
 import a from '../../images/avatar3.jpg'
 import d from '../../images/avatar1.jpg'
 import p from '../../images/me.png'
@@ -67,13 +67,13 @@ function Comment() {
   const handleStepChange = (step) => {
     setActiveStep(step);
   };
-
+  const colors = tokens(theme.palette.mode);
   return (
     <Box style={{ display:'flex', flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
     <Box sx={{paddingTop:'20px'}}>
-            <Typography variant='h2' 
-                    sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> Review From Clients </Typography>
-            <Typography  variant="h3"  sx={{textAlign:'center',  padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
+            <Typography variant='h3' color={colors.primary[300]}
+                    sx={{ textAlign:"center",padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> Review From Clients </Typography>
+            <Typography  variant="h2" color={colors.primary[400]}  sx={{textAlign:'center',  padding:'15px 0 50px 0'}}>
                     Testimonials
             </Typography>
         </Box>
@@ -90,7 +90,7 @@ function Comment() {
             {Math.abs(activeStep - index) <= 2 ? (
               <Box component="div"
                 sx={{
-                    mt:5,
+                  mt:5,
                   height: 305,
                   maxWidth: 400,
                   overflow: 'hidden',
@@ -105,9 +105,9 @@ function Comment() {
                 alt={step.label}>
                 
               <Avatar alt="Remy Sharp" src= {step.imgPath} sx={{width:'50px' ,height:'50px',
-                boxShadow:'0px 0px 5px 5px #4db5ff'}}/>
-            <Typography variant='h6' sx={{color:'silver'}}>{step.label}</Typography>
-            <Typography sx={{color:'silver',mt:1,p:2,width:'300px'}}>{step.body}<br/></Typography>
+                boxShadow:`0px 0px 5px 5px ${colors.primary[400]}`}}/>
+            <Typography variant='h6' sx={{color:colors.primary[300],fontSize:'18px' }}>{step.label}</Typography>
+            <Typography sx={{color:colors.primary[150],mt:1,p:2,width:'300px'}}>{step.body}<br/></Typography>
             </Box>
             ) : null}
           </div>

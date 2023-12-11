@@ -12,48 +12,27 @@ import CustomizedSwitches from './Component/navbarToggle/DarkMode';
 import {ThemeProvider  } from '@mui/material';
 import {useMode} from './Context/ThemeContext'
 import { ColorModeContext,tokens} from './Context/ThemeContext'
-
 function App() {
   const [theme, toggleColorMode , mode] = useMode();
   const colors = tokens(theme.palette.mode);
-// const theme = createTheme({
-//   palette:{
-//     primary :{
-//       main:'#1f242d'
-//     },
-//     secondary:{
-//       main:'#4db5ff'
-//     }
-//   },
-  // typography:{
-  //   fontFamily: ["AhmedBold"],
-  //   fontWeightLight:500
-  // },
-  // paragraph:{
-  //   fontFamily: ["AhmedBold"],
-  //   fontWeightLight:400
-  // },
-// })  
   return (
     // <ColorProvider>
     <ThemeProvider theme={theme}>  
       <ColorModeContext.Provider value={{toggleColorMode,theme,mode}}>
-      <div className= "App" style={{ backgroundColor: colors.primary[100]}}> 
-     
-        <Header/>
-        <CustomizedSwitches  /> 
-        <LabelBottomNavigation/>
-        <AboutMe/>
-        <Experience/>
-        <Services/>
-        <Projects/>
-        <Comment/>
-        <ContactMe/>
-        <Footer/>
-      </div>  
+        <div className= "App" style={{ backgroundColor: colors.primary[100]}}> 
+          <Header/>
+          <CustomizedSwitches  /> 
+          <LabelBottomNavigation/>
+          <AboutMe/>
+          <Experience/>
+          <Services/>
+          <Projects/>
+          <Comment/>
+          <ContactMe/>
+          <Footer/>
+        </div>  
         </ColorModeContext.Provider>
     </ThemeProvider>
   );
 }
-
 export default App;

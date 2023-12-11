@@ -32,14 +32,14 @@ const colors = tokens(theme.palette.mode);
                 alignItems:'center',gap:1 }}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                         <GppGoodIcon sx={{color:colors.primary[400] ,fontSize:'18px'}}/>
-                        <Typography variant='h6'  style={{color:'white',fontSize:'17px' }} >{first}</Typography>
+                        <Typography variant='h6'  style={{color:colors.primary[150],fontSize:'17px' }} >{first}</Typography>
                     </Box>
                     <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> {firstY} </Typography>
                 </Box>
                 <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1, }}>
                         <GppGoodIcon sx={{color:colors.primary[400]  ,fontSize:'18px'}}/> 
-                        <Typography variant='h6'  style={{color:'white',fontSize:'17px'}} >{second}</Typography>
+                        <Typography variant='h6'  style={{color:colors.primary[150],fontSize:'17px'}} >{second}</Typography>
                     </Box>
                     <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> {secondY}</Typography>
                 </Box>
@@ -48,7 +48,7 @@ const colors = tokens(theme.palette.mode);
                 <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
                     <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1,}}>
                         <GppGoodIcon sx={{color:colors.primary[400] ,fontSize:'18px'}}/> 
-                        <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >{third}</Typography>
+                        <Typography variant='h6' sx={{color:colors.primary[150],fontSize:'17px'}} >{third}</Typography>
                     </Box>
                     <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> {thirdY}</Typography>
                 </Box>
@@ -56,7 +56,7 @@ const colors = tokens(theme.palette.mode);
                     <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
                         <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1,}}>
                             <GppGoodIcon sx={{color:colors.primary[400] ,fontSize:'18px'}}/> 
-                            <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >{fourth}</Typography>
+                            <Typography variant='h6' sx={{color:colors.primary[150],fontSize:'17px'}} >{fourth}</Typography>
                         </Box>
                         <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> {fourthY}</Typography>
                     </Box>
@@ -66,14 +66,14 @@ const colors = tokens(theme.palette.mode);
             <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
                 <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1,}}>
                     <GppGoodIcon sx={{color:colors.primary[400] ,fontSize:'18px'}}/> 
-                    <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >{fifth}</Typography>
+                    <Typography variant='h6' sx={{color:colors.primary[150],fontSize:'17px'}} >{fifth}</Typography>
                 </Box>
                 <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> {firstY}</Typography>
             </Box>
             <Box  sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',gap:1,}}>
                 <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',gap:1,}}>
                     <GppGoodIcon sx={{color:colors.primary[400]  ,fontSize:'18px'}}/> 
-                    <Typography variant='h6' sx={{color:'white',fontSize:'17px'}} >{sixth}</Typography>
+                    <Typography variant='h6' sx={{color:colors.primary[150],fontSize:'17px'}} >{sixth}</Typography>
                 </Box>
                 <Typography variant='h6'sx={{fontSize:'10px',color:"silver"}}> {fourthY}</Typography>
             </Box>

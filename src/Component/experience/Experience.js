@@ -43,7 +43,8 @@ return(
                 My Experience
             </Typography>
         </Box>
-        <Box className='exmeBox' sx={{  padding:5 ,display:'flex',justifyContent:'center' , flexWrap:'wrap',  alignItems:'center' , gap:10,}}>
+        <Box className='exmeBox' 
+        sx={{  padding:5 ,display:'flex',justifyContent:'center' , flexWrap:'wrap',  alignItems:'center' , gap:10,}}>
             <ExperienceBox ref = {back} 
             bigTitle='Frontend Development'
                 first = 'HTML5' firstY ='Experience'

@@ -14,7 +14,8 @@ import scrollReveal from "scrollreveal";
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import IconButton from '@mui/material/IconButton';
-
+import { tokens } from '../../Context/ThemeContext';
+import { useTheme } from '@mui/material';
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
@@ -102,119 +103,116 @@ export default function ContactMe() {
    
   };
 
-  
-  return (
-    <Box id='contact' //sx={{height:'100vh'}}
-    >
-      <Box sx={{paddingTop:'20px'}}>
-      <Typography variant='h2' 
-          sx={{ textAlign:"center",color:'silver',padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> Get in Touch</Typography>
-      <Typography  variant="h3"  sx={{textAlign:'center',  padding:'15px 0 50px 0',color:' #4db5ff', fontSize:30}}>
-        Contact Me
-      </Typography>
+const theme = useTheme();
+const colors = tokens(theme.palette.mode);
+return (
+  <Box id='contact' variant='div'>
+    <Box sx={{paddingTop:'20px'}}>
+    <Typography variant='h3' 
+        sx={{ textAlign:"center",color:colors.primary[300],padding:'15px 0 20px',margin:'20px 0 -20px',fontSize:15}}> Get in Touch</Typography>
+    <Typography  variant="h2"  sx={{textAlign:'center',  padding:'15px 0 50px 0',color:colors.primary[400]}}>
+      Contact Me
+    </Typography>
+    </Box>
+  <Box className='ConBox'
+  component="form" ref={form} onSubmit={sendEmail}
+  sx={{
+  '& .MuiTextField-root': 
+  { m: 1, width: '25ch' }, display:'flex',flexWrap:'wrap',
+  justifyContent:'center',gap:20
+  }}
+  noValidate
+  autoComplete="off">
+    <Box className='ConCardBox' ref={ card }
+  sx={{display:'flex',flexDirection:'column', flexWrap:'wrap',justifyContent:'center', gap:2 }} >
+    <Box>
+      <CardsInnerAboutMe icon ={
+      <IconButton target='_blank' sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru' >
+        <MarkunreadIcon sx={{fontSize:35 ,color:colors.primary[400]}} />
+      </IconButton>} 
+      title='E-mail' perif='a.abdelmaksoud@mail.ru'
+      sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru'
+      />
       </Box>
-    
-    <Box className='ConBox'
-    component="form" ref={form} onSubmit={sendEmail}
-    sx={{
-    '& .MuiTextField-root': 
-    { m: 1, width: '25ch' }, display:'flex',flexWrap:'wrap',
-    justifyContent:'center',gap:20
-    }}
-    noValidate
-    autoComplete="off"
-  >
-      <Box className='ConCardBox' ref={ card }
-    sx={{display:'flex',flexDirection:'column', flexWrap:'wrap',justifyContent:'center', gap:2 }} >
       <Box>
-        <CardsInnerAboutMe icon ={
-        <IconButton target='_blank' sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru' >
-          <MarkunreadIcon sx={{fontSize:35 ,color:'#4db5ff'}} />
-        </IconButton>} 
-        title='E-mail' perif='a.abdelmaksoud@mail.ru'
-        sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru'
+      <CardsInnerAboutMe icon ={
+        <IconButton   sendM='Send a message' href='https://wa.me/79821313577?' target='_blank' >
+          <WhatsAppIcon  sx={{fontSize:35 ,color:colors.primary[400]}} /> 
+        </IconButton>}
+        title='WhatsApp' perif='+7(982)131-35-77' 
+        sendM='Send a message' href='https://wa.me/79821313577?'
         />
-        </Box>
-        <Box>
+    </Box>
+    <Box>
         <CardsInnerAboutMe icon ={
-          <IconButton   sendM='Send a message' href='https://wa.me/79821313577?' target='_blank' >
-            <WhatsAppIcon  sx={{fontSize:35 ,color:'#4db5ff'}} /> 
-          </IconButton>}
-          title='WhatsApp' perif='+7(982)131-35-77' 
-          sendM='Send a message' href='https://wa.me/79821313577?'
+        <IconButton   sendM='Send a message' href='https://t.me/mango12198' target='_blank' >
+          <TelegramIcon  sx={{fontSize:35 ,color:colors.primary[400]}}  />
+        </IconButton>} 
+              title='Telegram' perif='Ahmed Hussien'
+              sendM='Send a message' href='https://t.me/mango12198'
+              />
+          </Box>
+    </Box>
+    <Box  ref={email} sx={{display:'flex',flexDirection:'column',
+      alignItems:'start',gap:5}}>
+          <TextField className='INP'  style={{width:500 ,color:colors.primary[300]}} onChange={handleChangeName}
+          name="user_name"
+          id="standard-textarea"
+          label="Full name"
+          placeholder="Full name"
+          multiline
+          variant="standard"
+          inputProps={{
+              style: {color:colors.primary[400]},
+            }}
+          InputLabelProps={{
+              style: { color: colors.primary[400] },
+          }}
           />
-      </Box>
-      <Box>
-          <CardsInnerAboutMe icon ={
-          <IconButton   sendM='Send a message' href='https://t.me/mango12198' target='_blank' >
-            <TelegramIcon  sx={{fontSize:35 ,color:'#4db5ff'}}  />
-          </IconButton>} 
-                title='Telegram' perif='Ahmed Hussien'
-                sendM='Send a message' href='https://t.me/mango12198'
-                />
-            </Box>
-      </Box>
-      <Box  ref={email} sx={{display:'flex',flexDirection:'column',
-        alignItems:'start',gap:5}}>
-            <TextField className='INP'  style={{width:500 ,color:'silver'}} onChange={handleChangeName}
-            name="user_name"
-            id="standard-textarea"
-            label="Full name"
-            placeholder="Full name"
-            multiline
-            variant="standard"
-            inputProps={{
-                style: {color:'#4db5ff'},
-              }}
-            InputLabelProps={{
-                style: { color: 'silver' },
+          <TextField  className='INP' style={{width:500 ,color:colors.primary[400] ,}} onChange={handleChangeEmail}
+          name="user_email"
+          id="standard-textarea"
+          label="Your Email"
+          placeholder="Your Email"
+          multiline
+          variant="standard"
+          inputProps={{
+              style: { width:'300px' ,color:colors.primary[400] }}}
+          InputLabelProps={{
+              style: { color:colors.primary[400]},
+          }}
+          />
+          <TextField  className='INP' style={{width:500 ,color:colors.primary[400]}} onChange={handleChangeMessage}
+          name="message"
+          id="standard-multiline-static"
+          label="Your Message"
+          placeholder="Your Message"
+          multiline
+          rows={4}
+          defaultValue="Name Project"
+          variant="standard"
+          inputProps={{
+              style: { width:'300px' ,color:colors.primary[400]},
             }}
-            />
-            <TextField  className='INP' style={{width:500 ,color:'#4db5ff'}} onChange={handleChangeEmail}
-            name="user_email"
-            id="standard-textarea"
-            label="Your Email"
-            placeholder="Your Email"
-            multiline
-            variant="standard"
-            inputProps={{
-                style: { width:'300px' ,color:'#4db5ff'},
-              }}
-            InputLabelProps={{
-                style: { color: 'silver' },
-            }}
-            />
-            <TextField  className='INP' style={{width:500 ,color:'#4db5ff'}} onChange={handleChangeMessage}
-            name="message"
-            id="standard-multiline-static"
-            label="Your Message"
-            placeholder="Your Message"
-            multiline
-            rows={4}
-            defaultValue="Name Project"
-            variant="standard"
-            inputProps={{
-                style: { width:'300px' ,color:'#4db5ff'},
-              }}
-            InputLabelProps={{
-                style: { color: 'silver' },
-            }}
-            />
-            <Button variant="contained"  endIcon={<SendIcon sx={{color:'#253546'}}/>} 
-            sx={{fontSize:"11px" ,width: "23%",height: "44px",color: '#253546'
-            , background:'#4db5ff'}}
-            type="submit" value="Send"
-            >
-                Send
-            </Button>
-      </Box>
+          InputLabelProps={{
+              style: { color: colors.primary[300] },
+          }}
+          />
+          <Button variant="contained"  endIcon={<SendIcon sx={{color:colors.primary[150]}}/>} 
+          sx={{fontSize:"11px" ,width: "23%",height: "44px",color: colors.primary[150]
+          , background:'#4db5ff'}}
+          type="submit" value="Send"
+          >
+              Send
+          </Button>
     </Box>
-    {/* snack bar  */}
-    <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity={type} sx={{ width: '100%' }}>
-          {message}
-        </Alert>
-      </Snackbar>
-    </Box>
-  );
+  </Box>
+  {/* snack bar  */}
+  <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+      <Alert onClose={handleClose} severity={type} sx={{ width: '100%' }}>
+        {message}
+      </Alert>
+    </Snackbar>
+  </Box>
+);
 }

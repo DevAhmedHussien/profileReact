@@ -60,11 +60,10 @@ padding: 7,
 }));
 
 export default function CustomizedSwitches() {
-    // const theme = useTheme();
-    // const { toggleColorMode } = useColorProvider()
+    
     const { toggleColorMode } = useContext(ColorModeContext)
 return (
-    <Box component = 'div' sx={{position:'absolute',top:'25px' ,right:'30px'}}> 
+    <Box component = 'div' sx={{position:'absolute',top:'10px' ,right:'10px'}}> 
 <FormGroup >
         <FormControlLabel  onClick={()=>{toggleColorMode()}} 
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}

@@ -14,7 +14,7 @@ const colors = tokens(theme.palette.mode);
             borderRadius:'20px',alignItems : 'center' ,cursor:'pointer'}}>
             <Box style={{fontSize: '66px'}}>{icon}</Box>
             <Typography  variant='h6'  style={{ fontSize: "17px",margin:'0' ,
-            color:colors.primary[300], }} >{title}</Typography>
+            color:colors.primary[150], }} >{title}</Typography>
             <Typography variant='h6' 
             style={{fontSize: "9px", color:colors.primary[300],}}>{perif}</Typography>
             <a href={href} rel="noreferrer"  target='_blank' alt=''style={{fontSize: "11px", color: '#4db5ff',textDecoration:'none'}}>{sendM}</a>

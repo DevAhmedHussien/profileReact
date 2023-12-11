@@ -18,6 +18,7 @@
           },
           primary: {
                100: "#1f242d", // backGround
+               150: "white",
                200: "#a3a3a3", // text for  greeting
                300: "#c2c2c2", // text title 
                400: "#4db5ff", // backGround Button
@@ -25,10 +26,12 @@
                600: "#4db5ff", // icons color
                700: "#0c101b", // icons cards 
                800: "#080b12", // icons back ground 
+               850: "#31353b", //navBar
                900: "#040509",
-               950:"#253546", //cards innerAbout me and experience and projects and contact me 
+               950: "#253546", //cards innerAbout me and experience and projects and contact me 
                1000 :"linear-gradient(rgb(77 181 255), #cdcdcd00)" // backgroundphotoheader
           },
+          
           greenAccent: {
                100: "#dbf5ee",
                200: "#b7ebde",
@@ -109,7 +112,7 @@
                800: "#f1b9b7",
                900: "#f8dcdb",
           },
-          blueAccent: {
+          blueAccent: { 
                100: "#151632",
                200: "#2a2d64",
                300: "#3e4396",
