@@ -126,8 +126,7 @@ const colors = tokens(theme.palette.mode);
                 ]}
                 wrapper="h1"
                 speed={20}
-                style={{ fontSize: '15px' , color :colors.primary[200] ,// background:'#6870fa'
-              }}
+                style={{ fontSize: '15px' , color :colors.primary[200] }}
                 repeat={Infinity}
               />
           <Typography variant="h2" color={colors.primary[150]} 
@@ -189,12 +188,14 @@ const colors = tokens(theme.palette.mode);
         </Fab>
       </Box>
       <Box> 
-              <div style={{
-        transform: "rotate(90deg)",fontSize: "15px",color:colors.primary[400],
-        letterSpacing:1,fontWeight:300,cursor:'pointer', marginRight:-15,
-              }}
-              onClick={scrollDown} ref={scrollref}>scroll down</div>
-              {/* <BasicSpeedDial sx={{}} /> */}
+          <div 
+          style={{
+            transform: "rotate(90deg)",fontSize: "15px",color:colors.primary[400],
+            letterSpacing:1,fontWeight:300,cursor:'pointer', marginRight:-15,
+            }}
+              onClick={scrollDown} ref={scrollref}>
+                scroll down
+              </div>
       </Box>
     </Box>
     </>

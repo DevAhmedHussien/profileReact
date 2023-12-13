@@ -9,9 +9,7 @@ import {CardActionArea, CardActions } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
 import { tokens } from '../../Context/ThemeContext';
 import { useTheme } from '@mui/material';
-
 export default function Services() {
-
     const box = useRef(null)
     useEffect(() => {
         if (box.current )
@@ -42,7 +40,7 @@ return (
                     <CardContent
             sx={{background:colors.primary[400],height:60 ,display:'flex',justifyContent:'center',alignItems:'center',
             borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px'}}>
-                    <Typography gutterBottom variant="h3" component="div" sx={{textAlign:'center',color:'#253546'}}>
+                    <Typography gutterBottom variant="h3" component="div" sx={{textAlign:'center',color:colors.primary[950]}}>
                     UI/UX Design
                     </Typography>
                     </CardContent>
@@ -74,7 +72,7 @@ return (
                     <CardContent
                 sx={{background:colors.primary[400],height:60 ,display:'flex',justifyContent:'center',alignItems:'center',
                 borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px'}}>
-                    <Typography gutterBottom variant="h3" component="div" sx={{textAlign:'center',color:'#253546'}}>
+                    <Typography gutterBottom variant="h3" component="div" sx={{textAlign:'center',color:colors.primary[950]}}>
                     Web Development
                     </Typography>
                     </CardContent>
@@ -115,7 +113,7 @@ return (
                     <CardContent
             sx={{background:colors.primary[400],height:60 ,display:'flex',justifyContent:'center',alignItems:'center',
             borderBottomRightRadius:'40px',borderBottomLeftRadius:'40px'}}>
-                    <Typography gutterBottom variant="h3" component="div" sx={{textAlign:'center',color:'#253546'}}>
+                    <Typography gutterBottom variant="h3" component="div" sx={{textAlign:'center',color:colors.primary[950]}}>
                     TelegramBot Dev
                     </Typography>
                     </CardContent>

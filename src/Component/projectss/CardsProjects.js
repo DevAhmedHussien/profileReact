@@ -33,7 +33,8 @@ return (
     </CardActionArea>
     <CardActions sx={{padding:3 ,marginTop:'-15px'}}>
         <Button  target='_blank' className='buttonPro' variant='contained' size="small" color="primary" href={git} 
-        sx={{height:'36px',background:colors.primary[400] ,color:colors.primary[150] ,borderRadius:2}}>
+        sx={{height:'36px',background:colors.primary[400] , color: 'white'//colors.primary[200] 
+        , background:colors.primary[400]  ,borderRadius:2}}>
             GitHub
         </Button>
         <Button  target='_blank' className='buttonPro' size="small" color="primary" href={live} 

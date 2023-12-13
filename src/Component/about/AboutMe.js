@@ -61,7 +61,8 @@ const colors = tokens(theme.palette.mode);
             <Box className='aboutmeBox' 
             sx={{display:"flex", flexWrap:'wrap', justifyContent: "center"
             ,alignItems:'center',margin:'0px auto',gap:10}}> 
-                <Box id='DivimgAbout' className='DivimgAbout' sx={{backgroundColor:' #0ef', borderRadius:'30px' ,width:'371px',height:'437px'}}>
+                <Box id='DivimgAbout' className='DivimgAbout'
+                 sx={{backgroundColor:colors.primary[600], borderRadius:'30px' ,width:'371px',height:'437px'}}>
                     <img id='imgAboutMe' className='imgAboutMe' src={profile1}alt='' 
         style={{background:'#31353b',borderRadius:'30px',transition:'1s'}}/>
                 </Box>  
@@ -72,14 +73,14 @@ const colors = tokens(theme.palette.mode);
                 sx={{width: '100%',display:"flex",justifyContent: "space-around",alignItems:'center',gap:1 ,flexWrap:'wrap', 
                     }}>
                     <Box >
-                        <CardsInnerAboutMe icon ={<AllInclusiveRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} title='Experience' perif='+1 years working'
+                        <CardsInnerAboutMe icon ={<AllInclusiveRoundedIcon sx={{fontSize:35 ,color:colors.primary[600]}} />} title='Experience' perif='+1 years working'
                         />
                     </Box>
                     <Box>
-                        <CardsInnerAboutMe icon ={<InterpreterModeRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}} />} title='Clients' perif='+150 worldWide ' />
+                        <CardsInnerAboutMe icon ={<InterpreterModeRoundedIcon sx={{fontSize:35 ,color:colors.primary[600]}} />} title='Clients' perif='+150 worldWide ' />
                     </Box>
                     <Box>
-                        <CardsInnerAboutMe icon ={<RequestPageRoundedIcon sx={{fontSize:35 ,color:'#4db5ff'}}  />} title='Projects' perif='+80 complited ' />
+                        <CardsInnerAboutMe icon ={<RequestPageRoundedIcon sx={{fontSize:35 ,color:colors.primary[600]}}  />} title='Projects' perif='+80 complited ' />
                     </Box>
                 </Box>
                     <Box >
