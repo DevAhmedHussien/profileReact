@@ -111,7 +111,8 @@ const colors = tokens(theme.palette.mode);
         <>
     <Box className='header' id='header' sx={{ height: "100vh", display:"flex",
     flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-      <Box sx={{ height: "100vh", display:"flex",marginTop:'-30px',
+      <Box sx={{ height: "100vh", display:"flex",marginTop:'-30px'
+      ,
           flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
             <TypeAnimation
                 sequence={[
@@ -165,7 +166,7 @@ const colors = tokens(theme.palette.mode);
       </Box>
     </Box>
     <Box className='hamada'
-    sx={{ position: 'relative',bottom: '225px',display:"flex",
+    sx={{ position: 'relative',bottom: '235px',display:"flex",
     justifyContent: "space-around",alignItems:'center',gap: "60%",}}> 
       <Box  style={{display:"flex",flexDirection:"column",justifyContent:"center",
       textAlign:"center", gap:10}} ref={iconsRef}>

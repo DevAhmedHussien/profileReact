@@ -34,7 +34,7 @@ padding: 7,
 },
 '& .MuiSwitch-thumb': {
     backgroundColor: 
-    theme.palette.mode === 'dark' ? '#003892' : '#001e3c',
+    theme.palette.mode === 'dark' ? '#003892': '#1F2A40' ,//#1F2A40','#4db5ff'    // '#003892' : '#001e3c'  ,
     width: 32,
     height: 32,
     '&:before': {
@@ -63,7 +63,7 @@ export default function CustomizedSwitches() {
     
     const { toggleColorMode } = useContext(ColorModeContext)
 return (
-    <Box component = 'div' sx={{position:'absolute',top:'10px' ,right:'10px'}}> 
+    <Box component = 'div' sx={{position:'absolute',top:'0' ,right:'0'}}> 
 <FormGroup >
         <FormControlLabel  onClick={()=>{toggleColorMode()}} 
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}

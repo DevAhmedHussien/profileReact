@@ -8,6 +8,7 @@ import Projects from './Component/projectss/Projects';
 import ContactMe from './Component/contactme/ContactMe';
 import Footer from'./Component/footer/Footer'
 import Comment from './Component/comment/Comment';
+import Comment_2 from './Component/comment/Ccomment_2';
 import CustomizedSwitches from './Component/navbarToggle/DarkMode';   
 import {ThemeProvider  } from '@mui/material';
 import {useMode} from './Context/ThemeContext'
@@ -27,7 +28,8 @@ function App() {
           <Experience/>
           <Services/>
           <Projects/>
-          <Comment/>
+          {/* <Comment/> */}
+          <Comment_2/>
           <ContactMe/>
           <Footer/>
         </div>  

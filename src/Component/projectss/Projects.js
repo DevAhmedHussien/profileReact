@@ -44,21 +44,22 @@ return (
             git='https://github.com/DevAhmedHussien/todo' 
             live='https://654d32fc52bd5b0a9a6ce0e6--heartfelt-kelpie-32af91.netlify.app/' />
 
-            <CardsProjects photo={photoProject2} title='telegramBot to exchange money  '
-            git='https://github.com/DevAhmedHussien?tab=repositories'
-            live='https://github.com/DevAhmedHussien?tab=repositories'/>
-
             <CardsProjects photo={photoProject5} title='simple Clone-amazon using Firebase'
             git='https://github.com/DevAhmedHussien/clone-simple-Amazon'
-            live='https://github.com/DevAhmedHussien?tab=repositories'/>
+            live='https://657ace3c2edb9301e58c9156--leafy-eclair-f53fdf.netlify.app/'/>
 
             <CardsProjects photo={photoProject6} title='praying time all world-listen quran'
             git='https://github.com/DevAhmedHussien/praying-time'
-            live='https://luminous-flan-e8f046.netlify.app/'/>
-            
+            live='https://657aca74a8f4d87f0f0a8cf1--aquamarine-crumble-381276.netlify.app/'/>
+
             <CardsProjects photo={photoProject4} title='simple CMS - to manage loung'
             git='https://github.com/DevAhmedHussien/diplom'
             live='https://github.com/DevAhmedHussien?tab=repositories'/>
+
+             <CardsProjects photo={photoProject2} title='telegramBot to exchange money  '
+            git='https://github.com/DevAhmedHussien?tab=repositories'
+            live='https://github.com/DevAhmedHussien?tab=repositories'/>
+
             
         </Box>
     </Box>
