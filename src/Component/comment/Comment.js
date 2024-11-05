@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+// import SwipeableViews from 'react-swipeable-views';
+// import { autoPlay } from 'react-swipeable-views-utils';
 import Avatar from '@mui/material/Avatar';
 import { tokens } from '../../Context/ThemeContext';
 import { useTheme } from '@mui/material';
@@ -17,7 +17,7 @@ import a from '../../images/avatar3.jpg'
 import d from '../../images/avatar1.jpg'
 import p from '../../images/me.png'
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+// const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const images = [
 {
     label: 'Hussien Fathy',
@@ -78,12 +78,12 @@ function Comment() {
         </Box>
     <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
  
-      <AutoPlaySwipeableViews
+      {/* <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
-      >
+      > */}
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
@@ -111,7 +111,7 @@ function Comment() {
             ) : null}
           </div>
         ))}
-      </AutoPlaySwipeableViews>
+      {/* </AutoPlaySwipeableViews> */}
       <MobileStepper sx={{bgcolor:'transparent'}}
         steps={maxSteps}
         position="static"
