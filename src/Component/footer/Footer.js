@@ -18,8 +18,8 @@ return(
     }}>
     <Typography variant='h6' sx={{padding:'10px', textAlign:'center',fontSize:'22',color:'silver' }}>- Copy right - <Typography variant='span' style={{
         color:'#31353b'}} > А.Ахмед  </Typography></Typography>
-    <div class="scroolUp" onClick={scrollUp} style={{cursor:'pinter'}} >
-            <span id="btnn" onClick={scrollUp} class="btnn" style={{cursor:'pinter'}} >
+    <div className="scroolUp" onClick={scrollUp} style={{cursor:'pinter'}} >
+            <span id="btnn" onClick={scrollUp} className="btnn" style={{cursor:'pinter'}} >
             </span>
         </div>
     </Box>

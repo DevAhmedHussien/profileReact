@@ -127,27 +127,28 @@ return (
   sx={{display:'flex',flexDirection:'column', flexWrap:'wrap',justifyContent:'center', gap:2 }} >
     <Box>
       <CardsInnerAboutMe icon ={
-      <IconButton target='_blank' sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru' >
+      <IconButton target='_blank'  href='mailto:a.abdelmaskoud@mail.ru' >
         <MarkunreadIcon sx={{fontSize:35 ,color:colors.primary[400]}} />
       </IconButton>} 
       title='E-mail' perif='a.abdelmaksoud@mail.ru'
-      sendM='Send a message' href='mailto:a.abdelmaskoud@mail.ru'
+      href='mailto:a.abdelmaskoud@mail.ru'
       />
       </Box>
       <Box>
       <CardsInnerAboutMe icon ={
-        <IconButton   sendM='Send a message' href='https://wa.me/79821313577?' target='_blank' >
+        <IconButton   href='https://wa.me/79821313577?' target='_blank' >
           <WhatsAppIcon  sx={{fontSize:35 ,color:colors.primary[400]}} /> 
         </IconButton>}
         title='WhatsApp' perif='+7(982)131-35-77' 
-        sendM='Send a message' href='https://wa.me/79821313577?'
+       href='https://wa.me/79821313577?'
         />
     </Box>
     <Box>
         <CardsInnerAboutMe icon ={
-        <IconButton   sendM='Send a message' href='https://t.me/mango12198' target='_blank' >
+          <IconButton  href='https://t.me/mango12198' target='_blank' >
           <TelegramIcon  sx={{fontSize:35 ,color:colors.primary[400]}}  />
-        </IconButton>} 
+        </IconButton>
+        } 
               title='Telegram' perif='Ahmed Hussien'
               sendM='Send a message' href='https://t.me/mango12198'
               />

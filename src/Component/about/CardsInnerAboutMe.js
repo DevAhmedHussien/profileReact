@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 import { tokens } from '../../Context/ThemeContext';
 import { useTheme } from '@mui/material';
 
-export default function CardsInnerAboutMe({icon , title , perif,sendM ,href}){
+export default function CardsInnerAboutMe({icon , title , perif,sendM = 'Send a Massege' ,href}){
     const theme = useTheme();
 const colors = tokens(theme.palette.mode);
     return(
